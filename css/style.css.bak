@@ -14,7 +14,6 @@
 /* Secciones */
 @import url('./candidatos.css');
 @import url('./comparador.css');
-@import url('./density.css');
 
 /* Layout, acordeon, metodologia y responsive */
 @import url('./layout.css');

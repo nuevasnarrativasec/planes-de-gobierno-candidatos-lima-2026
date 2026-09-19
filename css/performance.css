@@ -91,8 +91,8 @@
 /* Área de toque más grande para el handle del slider */
 .slider-handle {
     /* Área de toque mínima de 44x44 (recomendación Apple) */
-    min-width: 44px;
-    min-height: 44px;
+    min-width: 15x;
+    min-height: 15px;
     /* El contenido visual puede ser más pequeño con padding negativo visual */
 }
 

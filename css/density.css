@@ -1,0 +1,375 @@
+/* ============================================
+   PANORAMA GENERAL
+   ============================================ */
+.box-main-panorama {
+    background-color: var(--color-bg-white);
+    margin: var(--spacing-lg) auto 0;
+    max-width: 1024px;
+    padding: 0 var(--spacing-md) var(--spacing-lg);
+}
+
+.box-main-panorama h2 {
+    font: 1rem/1.4 "Roboto", sans-serif;
+    font-weight: 800;
+    margin: 10px auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.box-main-panorama p {
+    font: 1rem/1.5 "Roboto", sans-serif;
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+}
+    .box-main-panorama p span{
+        display: block;
+        font-style: italic;
+    }
+
+.box-flourish {
+    margin: 0 auto var(--spacing-lg);
+    max-width: 860px;
+}
+
+/* ============================================
+   DENSITY SECTION
+   ============================================ */
+.density-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.density-header {
+    margin-bottom: var(--spacing-lg);
+}
+
+.density-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.density-header p {
+    color: var(--color-text-light);
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.density-controls {
+    margin-bottom: var(--spacing-lg);
+}
+
+/* ============================================
+   PARTY SELECTOR
+   ============================================ */
+.party-selector {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.party-selector select {
+    width: 100%;
+    max-width: 400px;
+    padding: 14px 40px 14px 20px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 15px;
+    background: white;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+}
+
+/* ============================================
+   THEME SLIDER
+   ============================================ */
+.theme-slider-container {
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.theme-slider-label {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: var(--color-text);
+    text-transform: uppercase;
+}
+
+.theme-slider {
+    position: relative;
+    height: 15px;
+    background: transparent;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    overflow: visible;
+    margin-bottom: 10px;
+    touch-action: none;
+    user-select: none;
+}
+
+.theme-segments {
+    display: flex;
+    height: 100%;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.theme-segment {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    position: relative;
+    opacity: 1;
+}
+
+.theme-segment.dimmed {
+    opacity: 0.3;
+}
+
+.theme-segment:hover {
+    transform: scaleY(1.1);
+    z-index: 10;
+}
+
+.theme-segment.active {
+    transform: scaleY(1.2);
+    z-index: 20;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    opacity: 1 !important;
+}
+
+/* ============================================
+   THEME LABELS
+   ============================================ */
+.theme-labels {
+    margin-top: 25px;
+    position: relative;
+    height: 60px;
+    width: 100%;
+}
+
+.theme-label-item {
+    position: absolute;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    transition: all var(--transition-normal);
+    transform: rotate(-45deg) translateX(-80%);
+    transform-origin: top left;
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
+.theme-label-item.active {
+    color: var(--color-text);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* ============================================
+   SLIDER HANDLE
+   ============================================ */
+.slider-handle {
+    position: absolute;
+    top: -7px;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background: white;
+    border: 3px solid var(--color-text);
+    border-radius: var(--radius-full);
+    cursor: grab;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transition: left 0.2s ease-out;
+    touch-action: none;
+    user-select: none;
+}
+
+.slider-handle:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.slider-handle:active,
+.slider-handle.dragging {
+    cursor: grabbing;
+    transform: translate(-50%, -50%) scale(1.15);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    transition: none;
+}
+
+/* ============================================
+   PARTY LIST (Desktop)
+   ============================================ */
+.party-list {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0;
+    align-items: start;
+}
+
+.party-names-column,
+.party-bars-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.party-name-item,
+.party-bar-item {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-md);
+    background: white;
+    border-bottom: 1px solid var(--color-border);
+    min-height: 50px;
+    transition: all var(--transition-normal);
+}
+
+.party-bar-item{
+    padding-bottom: 0;
+}
+
+.party-name-item {
+    padding: var(--spacing-md-party-item);
+}
+    
+    .party-name-item:nth-child(26),
+    .party-name-item:nth-child(28),
+    .party-bar-item:nth-child(26),
+    .party-bar-item:nth-child(28){
+        /*display: none;*/
+    }
+
+.party-density-item {
+    display: flex;
+    align-items: center;
+}
+
+.party-density-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    background: #d0d0d0;
+    margin-right: 15px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.party-density-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.party-density-name {
+    font-weight: 600;
+    font-size: 15px;
+    flex: 1;
+}
+
+/* ============================================
+   DENSITY BAR
+   ============================================ */
+.party-density-bar-container {
+    position: relative;
+    height: 10px;
+    width: 100%;
+}
+
+.party-density-bar {
+    display: flex;
+    height: 100%;
+    border-radius: 6px;
+    box-shadow: var(--shadow-sm);
+}
+
+.density-segment {
+    position: relative;
+    transition: all var(--transition-normal);
+    cursor: pointer;
+}
+
+.density-segment.dimmed {
+    opacity: 0.3;
+}
+
+.density-segment.highlighted {
+    opacity: 1;
+    transform: scaleY(1.15);
+    z-index: 10;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* ============================================
+   DENSITY TOOLTIP
+   ============================================ */
+.density-tooltip {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-text);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition-fast);
+    z-index: 1000;
+}
+
+.density-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: var(--color-text);
+}
+
+.density-segment:hover .density-tooltip,
+.density-segment.highlighted .density-tooltip {
+    opacity: 1;
+}
+
+.selected-theme-badge {
+    display: none;
+}
+
+/* ============================================
+   THEME COLORS
+   ============================================ */
+.theme-agricultura { background-color: var(--theme-agricultura); }
+.theme-medio_ambiente { background-color: var(--theme-ambiente); }
+.theme-cambio_climatico { background-color: var(--theme-cambio-climatico); }
+.theme-cultura_turismo { background-color: var(--theme-cultura); }
+.theme-descentralizacion { background-color: var(--theme-descentralizacion); }
+.theme-economia { background-color: var(--theme-economia); }
+.theme-educacion { background-color: var(--theme-educacion); }
+.theme-energia_minera { background-color: var(--theme-energia); }
+.theme-familia { background-color: var(--theme-familia); }
+.theme-gobernanza_digital { background-color: var(--theme-gobernanza); }
+.theme-infraestructura { background-color: var(--theme-infraestructura); }
+.theme-justicia_dh { background-color: var(--theme-justicia); }
+.theme-programas_sociales { background-color: var(--theme-programas-sociales); }
+.theme-salud { background-color: var(--theme-salud); }
+.theme-seguridad { background-color: var(--theme-seguridad); }
+.theme-transporte { background-color: var(--theme-transporte); }
+.theme-vivienda { background-color: var(--theme-vivienda); }

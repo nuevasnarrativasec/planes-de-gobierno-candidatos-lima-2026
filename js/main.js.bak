@@ -39,35 +39,6 @@ window.debounce = debounce;
 window.rafUpdate = rafUpdate;
 
 /* ============================================
-   LAZY LOAD DE EMBEDS FLOURISH
-   ============================================ */
-
-function initFlourishLazyLoad() {
-    if (!('IntersectionObserver' in window)) return;
-
-    const flourishEmbeds = document.querySelectorAll('.flourish-embed');
-    if (flourishEmbeds.length === 0) return;
-
-    const flourishObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const embed = entry.target;
-                if (embed.dataset.loaded === 'true') { observer.unobserve(embed); return; }
-                embed.dataset.loaded = 'true';
-                if (window.Flourish && window.Flourish.loadEmbed) {
-                    window.Flourish.loadEmbed(embed);
-                }
-                observer.unobserve(embed);
-            }
-        });
-    }, { root: null, rootMargin: '200px 0px', threshold: 0.01 });
-
-    flourishEmbeds.forEach(embed => flourishObserver.observe(embed));
-}
-
-window.initFlourishLazyLoad = initFlourishLazyLoad;
-
-/* ============================================
    INICIALIZACION PRINCIPAL
    ============================================ */
 
@@ -82,24 +53,6 @@ async function init() {
         await loadComparisonData();
         renderComparisonCards();
 
-        // Densidad discursiva ("Peso de los temas")
-        await loadDensityData();
-        initThemeSlider();
-        populateDensityPartySelector();
-        renderDensityBars();
-
-        // Reposicionar slider/barras al redimensionar (throttle iOS)
-        const throttledResize = throttle(() => {
-            rafUpdate(() => {
-                updateSliderHandle();
-                renderDensityBars();
-            });
-        }, 150);
-        window.addEventListener('resize', throttledResize, { passive: true });
-
-        // Lazy-load de los embeds de Flourish
-        initFlourishLazyLoad();
-
         console.log('Aplicacion inicializada correctamente');
     } catch (error) {
         console.error('Error al inicializar la aplicacion:', error);
@@ -112,11 +65,6 @@ async function refreshAllData() {
         await loadDataFromGoogleSheets();
         await loadComparisonData();
         renderComparisonCards();
-
-        await loadDensityData();
-        populateDensityPartySelector();
-        renderDensityBars();
-
         console.log('Datos actualizados correctamente');
     } catch (error) {
         console.error('Error al refrescar datos:', error);

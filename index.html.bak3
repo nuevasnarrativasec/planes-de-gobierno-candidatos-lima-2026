@@ -279,85 +279,7 @@
             </div>
         </div>
 
-                <!-- ============================================
-             SECCION: PANORAMA GENERAL
-             ============================================ -->
-        <div class="box-titulo-seccion">
-            <span class="linea-titulo-seccion"></span>
-            <h3>Panorama general</h3>
-        </div>
-
-        <div class="box-main-panorama">
-            <!-- Diversidad temática -->
-            <h2>Amplitud de la agenda</h2>
-            <p style="max-width: 650px;">
-               Muestra el abanico de temas que toca cada plan. <b>Un partido con una barra más extensa cubre más áreas, pero mencionar muchos temas no significa tener propuestas profundas en todos.</b>
-            </p>
-            <div class="box-indicador">
-                <img src="img/icon-click.jpg" alt="" width="100%">
-                <p>Presiona una barra para más información</p>
-            </div>            
-
-            <div class="box-flourish">
-                <div class="flourish-embed flourish-chart" data-src="visualisation/25750063"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/25750063/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
-            </div>
-
-            <!-- Densidad discursiva -->
-            <h2>Peso de los temas</h2>
-            <p>
-                Descubre qué porcentaje del texto total dedica cada partido a un tema. Esto revela sus verdaderas prioridades: <b>a mayor porcentaje, mayor énfasis en el discurso.</b>
-                <span>
-                    Nota: Si un tema marca 0%, puede ser que su mención sea tan mínima —menos del 1%— que el sistema no lo registra como prioridad.
-                </span>
-            </p>
-            <div class="box-indicador indicador-2">
-                <img src="img/icon-horizontal-scroll.png" alt="" width="100%">
-                <p>Desliza y selecciona un tema</p>
-            </div>
-
-            <!-- Sección de Densidad Discursiva -->
-            <div class="density-section" id="densitySection">
-                <div class="density-controls">
-                    <div class="party-selector">
-                        <select id="densityPartyFilter" onchange="updateDensityFilter()">
-                            <option value="">Todos</option>
-                        </select>
-                    </div>
-
-                    <div class="theme-slider-container">
-                        <div class="theme-slider" id="themeSlider">
-                            <div class="theme-segments" id="themeSegments">
-                                <!-- Segmentos se generan dinámicamente -->
-                            </div>
-                            <div class="slider-handle" id="sliderHandle"></div>
-                        </div>
-                        <div class="theme-labels" id="themeLabels">
-                            <!-- Labels se generan dinámicamente -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="party-list" id="partyDensityList">
-                    <!-- Lista de partidos con barras se genera dinámicamente -->
-                </div>
-            </div>
-
-            <!-- Prevalencia temática -->
-            <h2>La agenda común</h2>
-            <p>
-                Visualiza qué temas aparecen en casi todos los partidos. <b>Los bloques más grandes son los asuntos inevitables de esta campaña, independientemente de la ideología.</b>
-            </p>
-            <div class="box-indicador">
-                <img src="img/icon-click.jpg" alt="" width="100%">
-                <p>Presiona sobre un tema o elige un partido</p>
-            </div> 
-
-            <div class="box-flourish">
-                <div class="flourish-embed flourish-hierarchy" data-src="visualisation/25769480"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/25769480/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
-            </div>
-        </div>
-
-<!-- ============================================
+        <!-- ============================================
              SECCION: METODOLOGIA
              ============================================ -->
         <div class="box-metodologia">
@@ -390,9 +312,6 @@
     <script src="js/candidatos.js?v2"></script>
     <script src="js/comparador.js"></script>
     <script src="js/portada.js?v2"></script>
-
-    <!-- Densidad discursiva -->
-    <script src="js/density.js?v2"></script>
 
     <!-- Inicializacion principal -->
     <script src="js/main.js"></script>

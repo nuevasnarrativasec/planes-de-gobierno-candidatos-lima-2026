@@ -10,32 +10,8 @@ const CONFIG = {
     SPREADSHEET_URL: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRbRQRPiqxMJXKiKJyzwH1UROJh7JGC207cYkG2uaoVzAcsS02sK8HhJy39xYZB9zWIXoYZ4kTGUM3k/pub?output=csv',
 
     // Hoja 2: Datos de comparacion por temas
-    COMPARISON_SPREADSHEET_URL: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQpCcYTHdbCr77N5drH--fPo7ysN1RvbyMnyk9PgmOcmoKRV4FsIJMJdTPzDNsN8FiTLOEDntsvZiaE/pub?output=csv',
-
-    // Datos de densidad discursiva (JSON local; reemplazar con la data de Lima 2026)
-    DENSITY_DATA_URL: 'data/densidad-data.json'
+    COMPARISON_SPREADSHEET_URL: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQpCcYTHdbCr77N5drH--fPo7ysN1RvbyMnyk9PgmOcmoKRV4FsIJMJdTPzDNsN8FiTLOEDntsvZiaE/pub?output=csv'
 };
-
-// Temas para densidad discursiva (seccion "Peso de los temas")
-const THEMES = [
-    { id: 'agricultura', name: 'AGRICULTURA', color: '#3B82F6' },
-    { id: 'medio_ambiente', name: 'AMBIENTE', color: '#EF4444' },
-    { id: 'cambio_climatico', name: 'CAMBIO CLIMATICO', color: '#10B981' },
-    { id: 'cultura_turismo', name: 'CULTURA Y TURISMO', color: '#F59E0B' },
-    { id: 'descentralizacion', name: 'DESCENTRALIZACION', color: '#8B5CF6' },
-    { id: 'economia', name: 'ECONOMIA', color: '#06B6D4' },
-    { id: 'educacion', name: 'EDUCACION', color: '#06B6D4' },
-    { id: 'energia_minera', name: 'ENERGIA MINERA', color: '#06B6D4' },
-    { id: 'familia', name: 'FAMILIA', color: '#06B6D4' },
-    { id: 'gobernanza_digital', name: 'GOBERNANZA DIGITAL', color: '#06B6D4' },
-    { id: 'infraestructura', name: 'INFRAESTRUCTURA', color: '#06B6D4' },
-    { id: 'justicia_dh', name: 'JUSTICIA', color: '#06B6D4' },
-    { id: 'programas_sociales', name: 'PROGRAMAS SOCIALES', color: '#06B6D4' },
-    { id: 'salud', name: 'SALUD', color: '#06B6D4' },
-    { id: 'seguridad', name: 'SEGURIDAD', color: '#06B6D4' },
-    { id: 'transporte', name: 'TRANSPORTE', color: '#06B6D4' },
-    { id: 'vivienda', name: 'VIVIENDA', color: '#06B6D4' }
-];
 
 /* ============================================
    UTILIDADES
@@ -193,7 +169,6 @@ async function fetchWithRetry(url, retries = 3, delay = 1000) {
 
 // Exportar para uso global
 window.CONFIG = CONFIG;
-window.THEMES = THEMES;
 window.addCacheBuster = addCacheBuster;
 window.parseCSV = parseCSV;
 window.parseCSVComplete = parseCSVComplete;
