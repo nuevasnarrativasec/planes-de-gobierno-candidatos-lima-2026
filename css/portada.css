@@ -224,8 +224,22 @@
 }
 
 @media (max-width: 480px) {
+    /* Caras en 4 columnas; la ultima fila (2 caras) queda centrada */
     .portada-faces {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        max-width: 420px;
+        margin: 0 auto 22px;
+    }
+    .portada-face {
+        flex: 0 0 calc((100% - 30px) / 4);
+        max-width: calc((100% - 30px) / 4);
+    }
+    .portada-face img {
+        /*border-radius: 12px;
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.28);*/
     }
     .portada-titulo h1 { font-size: 1.9rem; }
     .portada-titulo h2 { font-size: 1.2rem; }
