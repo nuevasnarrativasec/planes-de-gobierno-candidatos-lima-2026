@@ -1,0 +1,683 @@
+/* ============================================
+   SCROLL CARDS (SABIAS QUE)
+   ============================================ */
+.main-tarjetas {
+    overflow: hidden;
+    width: 100%;
+}
+
+.scroll-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 30px;
+    padding: var(--spacing-md) 10px;
+    width: 99%;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    cursor: grab;
+    user-select: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-container.active {
+    cursor: grabbing;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 340px;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: var(--spacing-lg) 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    margin-top: 50px;
+}
+
+.card h3 {
+    font: 1.1rem/1.2 'Guardian Egyp Semibold';
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font: 1rem/1.5 'Guardian Egyp Regular';
+    color: #555;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    margin-bottom: var(--spacing-md);
+    position: absolute;
+    top: -30px;
+}
+
+.color-line {
+    width: 100%;
+    height: 3px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.separator-dotted {
+    width: 100%;
+    border-top: 1px dotted #aaa;
+    margin: 10px 0;
+}
+
+/* Card Theme Colors */
+.theme-pink .icon-box,
+.theme-pink .color-line { background-color: #ec407a; }
+.theme-pink p span { color: #ec407a; }
+
+.theme-blue .icon-box,
+.theme-blue .color-line { background-color: #536dfe; }
+.theme-blue p span { color: #536dfe; }
+
+.theme-yellow .icon-box,
+.theme-yellow .color-line { background-color: #fdd835; }
+.theme-yellow p span { color: #fcd31f; }
+
+.theme-orange .icon-box,
+.theme-orange .color-line { background-color: #ff7043; }
+.theme-orange p span { color: #ff7043; }
+
+.theme-cyan .icon-box,
+.theme-cyan .color-line { background-color: #03a9f4; }
+.theme-cyan p span { color: #03a9f4; }
+
+.theme-teal .icon-box,
+.theme-teal .color-line { background-color: #4dd0e1; }
+.theme-teal p span { color: #4dd0e1; }
+
+/* ============================================
+   ACCORDION (CONCEPTOS)
+   ============================================ */
+.conceptos-accordion {
+    max-width: 500px;
+    margin: 25px auto;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.conceptos-accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background: #fdfdfd;
+    border: 2px solid #f7bc46;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    position: relative;
+    z-index: 20;
+}
+
+.conceptos-accordion-icon {
+    width: 45px;
+    height: 45px;
+    background: #f7bc46;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.conceptos-accordion-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.conceptos-accordion-title {
+    flex: 1;
+    font: .9rem/1.2 'Guardian Egyp Bold', Arial, sans-serif;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: left;
+}
+
+.conceptos-accordion-chevron {
+    flex-shrink: 0;
+    stroke: #1a1a1a;
+    transition: transform var(--transition-normal);
+}
+
+.conceptos-accordion.open .conceptos-accordion-chevron {
+    transform: rotate(180deg);
+}
+
+.conceptos-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    transform: translateY(-30px);
+}
+
+.conceptos-accordion.open .conceptos-accordion-content {
+    max-height: 800px;
+}
+
+.conceptos-accordion-body {
+    border: 2px solid #f7bc46;
+    border-top: none;
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    padding: 65px 30px 25px;
+    margin-top: -15px;
+    text-align: left;
+}
+
+.concepto-section {
+    margin-bottom: 25px;
+}
+
+.concepto-section:last-child {
+    margin-bottom: 0;
+}
+
+.concepto-section h4 {
+    font: 1rem/1.3 'Guardian Egyp Bold', Arial, sans-serif;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.concepto-section > p:first-of-type {
+    font: 0.92rem/1.55 'Roboto', sans-serif;
+    color: var(--color-text);
+    margin: 0 0 12px 0;
+    text-align: left;
+}
+
+.concepto-section p.concepto-item {
+    font: 0.92rem/1.5 'Roboto', sans-serif;
+    color: var(--color-text);
+    margin: 0 0 8px 0;
+    text-align: left;
+}
+
+.concepto-section p.concepto-item strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+/* ============================================
+   METODOLOGIA
+   ============================================ */
+.box-metodologia {
+    border: 1px solid #707070;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 30px 40px;
+}
+
+.box-metodologia h6 {
+    font: 1rem/1.5 "Roboto", sans-serif;
+    font-weight: 800;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.box-metodologia p {
+    font: 1rem/1.5 "Roboto", sans-serif;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer-section {
+    background: #1a1a1a;
+    color: white;
+    padding: 30px 40px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-comercio {
+    display: block;
+    margin: var(--spacing-md) auto;
+    max-width: 130px;
+}
+
+span.separador-logo {
+    background-color: white;
+    display: block;
+    height: 1px;
+    margin: 0 auto var(--spacing-md);
+    max-width: 600px;
+}
+
+.footer-content ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: var(--spacing-md) 30px 0;
+    padding: 0;
+    text-align: left;
+    vertical-align: top;
+}
+
+.footer-content ul li {
+    margin-bottom: 15px;
+}
+
+.footer-content ul li h4 {
+    font: 0.9rem/1.3 'Roboto', sans-serif;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.footer-content ul li p {
+    font: 0.9rem/1.6 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* ============================================
+   RESPONSIVE - TABLET
+   ============================================ */
+@media (max-width: 1024px) {
+    .ctn-header {
+        top: 15%;
+        width: 100%;
+    }
+    
+    .ctn-header h1 {
+        font-size: 3.8rem;
+    }
+    
+    .logo-tu-decides {
+        max-width: 210px;
+    }
+    
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================
+   RESPONSIVE - MOBILE LANDSCAPE
+   ============================================ */
+@media (max-width: 768px) {
+    /* Density List Mobile */
+    .party-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .party-names-column,
+    .party-bars-column {
+        display: contents;
+    }
+    
+    .party-name-item,
+    .party-bar-item {
+        width: 85%;
+    }
+    
+    /* Order items for mobile */
+    .party-name-item:nth-child(1) { order: 1; }
+    .party-bar-item:nth-child(1) { order: 2; }
+    .party-name-item:nth-child(2) { order: 3; }
+    .party-bar-item:nth-child(2) { order: 4; }
+    .party-name-item:nth-child(3) { order: 5; }
+    .party-bar-item:nth-child(3) { order: 6; }
+    .party-name-item:nth-child(4) { order: 7; }
+    .party-bar-item:nth-child(4) { order: 8; }
+    .party-name-item:nth-child(5) { order: 9; }
+    .party-bar-item:nth-child(5) { order: 10; }
+    .party-name-item:nth-child(6) { order: 11; }
+    .party-bar-item:nth-child(6) { order: 12; }
+    .party-name-item:nth-child(7) { order: 13; }
+    .party-bar-item:nth-child(7) { order: 14; }
+    .party-name-item:nth-child(8) { order: 15; }
+    .party-bar-item:nth-child(8) { order: 16; }
+    .party-name-item:nth-child(9) { order: 17; }
+    .party-bar-item:nth-child(9) { order: 18; }
+    .party-name-item:nth-child(10) { order: 19; }
+    .party-bar-item:nth-child(10) { order: 20; }
+    
+    .theme-label-item {
+        font-size: 8px;
+        left: -8px;
+    }
+    
+    .theme-slider-container {
+        margin-bottom: 40px;
+    }
+    
+    .slider-handle {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .density-tooltip {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+    
+    /* Factchecking */
+    .factchecking-section {
+        padding: 30px 15px;
+    }
+    
+    .factchecking-header h2 {
+        font-size: 22px;
+    }
+    
+    .factchecking-tabs {
+        gap: 10px;
+    }
+    
+    .factchecking-tab {
+        border-bottom-color: #e3e0e0;
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+    
+    .factchecking-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .logo-comercio {
+        padding: var(--spacing-md) 25px;
+    }
+    
+    .footer-content ul {
+        display: block;
+    }
+    
+    .factchecking-search-box input {
+        width: 75%;
+    }
+    
+    .ctn-header .logo-tu-decides {
+        max-width: 120px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE - MOBILE PORTRAIT
+   ============================================ */
+@media (max-width: 640px) {
+    #header {
+        background-size: cover;
+    }
+    
+    #header .logo-tu-decides {
+        left: 0;
+        margin: 0 auto;
+        max-width: 165px;
+        position: relative;
+        top: 0;
+    }
+    
+    #wst {
+        display: inline-block;
+    }
+    
+    .video-desktop { display: none; }
+    .video-movil { display: block; }
+    
+    #header .ctn-header {
+        top: 8%;
+        width: 100%;
+    }
+    
+    #header .ctn-header h1 {
+        font: 2.2rem/1.1 'Guardian Egyp Bold';
+        margin-top: 10px;
+        display: block;
+        text-align: center;
+    }
+    
+    #header .ctn-header h2 {
+        display: block;
+        max-width: 300px;
+    }
+    
+    #social {
+        top: -50px;
+    }
+    
+    p.bajada {
+        max-width: 85%;
+        padding: var(--spacing-md) 15px;
+    }
+    
+    #box-main-candidatos h3 {
+        margin: 10px auto;
+        max-width: 70%;
+    }
+    
+    #box-main-candidatos p.bajada-candidatos,
+    .box-titulo-seccion p {
+        padding: 0 10px;
+    }
+    
+    .content {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .box-ctn-sidebar {
+        display: inline-block;
+        overflow-y: scroll;
+        vertical-align: top;
+        width: 100%;
+    }
+    
+    .sidebar {
+        width: 6000px;
+    }
+    
+    .party-item {
+        box-sizing: border-box;
+        display: inline-block;
+        max-width: 185px;
+        min-height: 116px;
+        text-align: center;
+        vertical-align: top;
+    }
+    
+    .party-item.active {
+        border-bottom: 4px solid var(--color-secondary);
+        border-left: none;
+    }
+    
+    .party-icon {
+        align-items: inherit;
+        display: block;
+        margin: 0 auto 5px;
+        text-align: center;
+    }
+    
+    .detail-panel {
+        margin: var(--spacing-md) 10px;
+    }
+    
+    .box-main-avatar {
+        min-width: 190px;
+        max-width: 190px;
+    }
+    
+    .party-complete-item {
+        width: 93%;
+    }
+
+    .party-density-name{
+        margin: 10px 0;
+    }
+    
+    .box-indicacion {
+        display: block;
+        margin: 15px auto;
+        max-width: 180px;
+        text-align: center;
+    }
+    
+    .box-indicacion img {
+        max-width: 30px;
+    }
+    
+    .box-indicacion span {
+        color: #a2a2a2;
+        display: block;
+        font: .9rem/1.2 'arial';
+    }
+    
+    .scroll-container {
+        width: 93%;
+    }
+    
+    .factchecking-section {
+        margin: 0 auto;
+    }
+    
+    #box-main-candidatos {
+        padding: 80px 0 0;
+    }
+    
+    .comparison-section {
+        padding: var(--spacing-lg) var(--spacing-md) 0;
+    }
+    
+    .card {
+        width: 85%;
+    }
+    
+    .box-metodologia {
+        max-width: 90%;
+    }
+    
+    ul.anclas li {
+        margin: 10px;
+        min-width: 140px;
+    }
+    
+    .footer-section .footer-content ul {
+        display: block;
+    }
+    
+    .ctn-header .box-titulo-altura {
+        text-align: inherit;
+    }
+    
+    .ctn-header span.separador {
+        display: none;
+    }
+    
+    /* Accordion Mobile */
+    .conceptos-accordion {
+        max-width: 90%;
+        margin: var(--spacing-md) auto;
+    }
+    
+    .conceptos-accordion-header {
+        padding: 10px 15px;
+        gap: 10px;
+    }
+    
+    .conceptos-accordion-icon {
+        width: 38px;
+        height: 38px;
+        padding: 6px;
+    }
+    
+    .conceptos-accordion-title {
+        font-size: 0.85rem;
+    }
+    
+    .concepto-section h4 {
+        font-size: 0.95rem;
+    }
+    
+    .concepto-section > p:first-of-type,
+    .concepto-section p.concepto-item {
+        font-size: 0.88rem;
+    }
+    
+    .comparison-section .btn-ver-conceptos {
+        margin-left: 20%;
+    }
+
+    .slider-handle {
+        min-width: 30px;
+        min-height: 30px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE - SHORT HEIGHT
+   ============================================ */
+@media (max-height: 732px) {
+    #header {
+        background-size: 60%;
+    }
+    
+    .box-titulo-altura {
+        text-align: center;
+    }
+    
+    .box-titulo-altura h1 {
+        display: inline-block;
+        font: 3rem/1 'Guardian Egyp Bold';
+        max-width: 325px;
+        text-align: left;
+        vertical-align: top;
+    }
+    
+    .ctn-header h2 {
+        display: inline-block;
+        font: 1.3rem/1.3 'Guardian Egyp Medium';
+        max-width: 200px;
+        margin: 0 auto;
+        padding-top: 10px;
+        text-align: left;
+        vertical-align: top;
+    }
+    
+    span.separador {
+        background-color: var(--color-primary);
+        display: inline-block;
+        height: 100px;
+        margin: 0 10px 0 0;
+        width: 2px;
+        vertical-align: middle;
+    }
+}
+
+@media (min-height: 768px) {
+    .ctn-header h1 {
+        font-size: 3.8rem;
+    }
+}

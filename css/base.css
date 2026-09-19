@@ -1,0 +1,144 @@
+/* ============================================
+   BASE & RESET
+   ============================================ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   FONTS
+   ============================================ */
+@font-face {
+    font-family: 'guardian_egyplight';
+    src: url('../fonts/guardianegyp-light-webfont.woff2') format('woff2'),
+         url('../fonts/guardianegyp-light-webfont.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Guardian Egyp Regular';
+    src: url('../fonts/GuardianEgyp-Regular.woff2') format('woff2'),
+         url('../fonts/GuardianEgyp-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Guardian Egyp Medium';
+    src: url('../fonts/GuardianEgyp-Medium.woff2') format('woff2'),
+         url('../fonts/GuardianEgyp-Medium.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Guardian Egyp Semibold';
+    src: url('../fonts/GuardianEgyp-Semibold.woff2') format('woff2'),
+         url('../fonts/GuardianEgyp-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Guardian Egyp Bold';
+    src: url('../fonts/GuardianEgyp-Bold.woff2') format('woff2'),
+         url('../fonts/GuardianEgyp-Bold.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Guardian Egyp Black';
+    src: url('../fonts/GuardianEgyp-Black.woff2') format('woff2'),
+         url('../fonts/GuardianEgyp-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.clear { clear: both; }
+
+/* ============================================
+   CSS CUSTOM PROPERTIES (Variables)
+   ============================================ */
+:root {
+    /* Colors */
+    --color-primary: #000;
+    --color-secondary: #5a5a5a;
+    --color-accent-yellow: #e9ba4c;
+    --color-accent-green: #59b64b;
+    --color-accent-blue: #5357ed;
+    --color-text: #333;
+    --color-text-light: #666;
+    --color-text-muted: #999;
+    --color-border: #e0e0e0;
+    --color-bg-light: #f5f5f5;
+    --color-bg-white: #fff;
+    
+    /* Veredictos */
+    --color-viable: #155725;
+    --color-inviable: #c2303e;
+    --color-enganosa: #b4983c;
+    --color-inexacta: #7c5e99;
+    --color-requiere-accion: #5a6478;
+    --color-indeterminado: #e2e3e5;
+    
+    /* Theme colors for density */
+    --theme-agricultura: #66aa94;
+    --theme-ambiente: #5d939f;
+    --theme-cambio-climatico: #959d53;
+    --theme-cultura: #6ba66d;
+    --theme-descentralizacion: #b384d0;
+    --theme-economia: #e9c15b;
+    --theme-educacion: #63a2e1;
+    --theme-energia: #cc816b;
+    --theme-familia: #e7804f;
+    --theme-gobernanza: #66a87a;
+    --theme-infraestructura: #7797ea;
+    --theme-justicia: #6ab07c;
+    --theme-programas-sociales: #d37a80;
+    --theme-salud: #c07fc3;
+    --theme-seguridad: #8d9f55;
+    --theme-transporte: #c67cb9;
+    --theme-vivienda: #66aab0;
+    
+    /* Spacing */
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 40px;
+    --spacing-xl: 60px;
+
+    --spacing-md-party-item: 0 20px;
+    
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-full: 50%;
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+    --shadow-lg: 0 8px 25px rgba(0,0,0,0.15);
+}

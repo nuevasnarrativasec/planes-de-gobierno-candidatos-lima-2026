@@ -1,0 +1,22 @@
+/* ============================================
+   MAIN STYLES - Planes de Gobierno Candidatos Lima 2026
+
+   Importa solo los modulos necesarios para las
+   secciones "box-main-candidatos" y "comparison-section".
+   ============================================ */
+
+/* Base & Variables (colores, fuentes, reset) */
+@import url('./base.css');
+
+/* Componentes compartidos (linea de titulo, botones, etc.) */
+@import url('./components.css');
+
+/* Secciones */
+@import url('./candidatos.css');
+@import url('./comparador.css');
+
+/* Layout, acordeon, metodologia y responsive */
+@import url('./layout.css');
+
+/* Optimizaciones de rendimiento (iOS / touch) */
+@import url('./performance.css');

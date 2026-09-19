@@ -1,0 +1,303 @@
+/* ============================================
+   OPTIMIZACIONES DE RENDIMIENTO PARA iOS
+   Agregar este archivo después de los otros CSS
+   ============================================ */
+
+/* ============================================
+   GPU ACCELERATION & WILL-CHANGE
+   ============================================ */
+
+/* Elementos que se animan frecuentemente */
+.slider-handle {
+    will-change: left;
+    transform: translateZ(0); /* Forzar GPU */
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.slider-handle.dragging {
+    will-change: left, transform;
+}
+
+/* Botón flotante */
+.btn-ver-hojas {
+    will-change: opacity;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+/* Tooltips de densidad */
+.density-tooltip {
+    will-change: opacity;
+    transform: translateZ(0) translateX(-50%);
+    -webkit-transform: translateZ(0) translateX(-50%);
+}
+
+/* Segmentos del slider */
+.theme-segment,
+.density-segment {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+/* Acordeón */
+.conceptos-accordion-content {
+    will-change: max-height;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+.conceptos-accordion-chevron {
+    will-change: transform;
+}
+
+/* Cards de factchecking */
+.factchecking-card {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.factchecking-card:hover {
+    will-change: transform, box-shadow;
+}
+
+/* ============================================
+   OPTIMIZACIONES DE SCROLL EN iOS
+   ============================================ */
+
+/* Scroll suave nativo en iOS */
+.sidebar,
+.scroll-container,
+.box-ctn-sidebar {
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+
+/* Prevenir rebote de scroll en iOS cuando no es necesario */
+.theme-slider {
+    overscroll-behavior: contain;
+    -webkit-overscroll-behavior: contain;
+}
+
+/* ============================================
+   TOUCH IMPROVEMENTS
+   ============================================ */
+
+/* Área de toque más grande para el handle del slider */
+.slider-handle {
+    /* Área de toque mínima de 44x44 (recomendación Apple) */
+    min-width: 44px;
+    min-height: 44px;
+    /* El contenido visual puede ser más pequeño con padding negativo visual */
+}
+
+/* Desactivar highlight de tap en iOS */
+.theme-segment,
+.density-segment,
+.slider-handle,
+.btn,
+.tab,
+.party-item,
+.factchecking-tab,
+.conceptos-accordion-header {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+/* ============================================
+   REDUCIR REPAINTS
+   ============================================ */
+
+/* Contener layouts para evitar reflows */
+.party-list,
+.comparison-grid,
+.factchecking-grid {
+    contain: layout style;
+}
+
+/* Isolation para elementos que cambian frecuentemente */
+.density-section,
+.theme-slider-container {
+    isolation: isolate;
+}
+
+/* ============================================
+   OPTIMIZACIÓN DE IMÁGENES
+   ============================================ */
+
+/* Lazy loading visual placeholder */
+.party-density-icon img,
+.card-avatar img,
+.avatar img {
+    content-visibility: auto;
+}
+
+/* Prevenir layout shift con aspect ratio */
+.party-density-icon {
+    aspect-ratio: 1;
+}
+
+.card-avatar {
+    aspect-ratio: 1;
+}
+
+/* ============================================
+   FIXES ESPECÍFICOS PARA iOS SAFARI
+   ============================================ */
+
+/* Fix para viewport height en iOS */
+@supports (-webkit-touch-callout: none) {
+    /* Solo iOS */
+    #header {
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+    }
+    
+    /* Fix para position: fixed en iOS */
+    .btn-ver-hojas {
+        position: fixed;
+        /* Forzar nuevo stacking context */
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+
+/* ============================================
+   REDUCCIÓN DE ANIMACIONES PARA BAJO RENDIMIENTO
+   ============================================ */
+
+/* Respetar preferencias del usuario */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .slider-handle,
+    .density-segment,
+    .theme-segment {
+        will-change: auto;
+    }
+}
+
+/* ============================================
+   MEDIA QUERY PARA DISPOSITIVOS TÁCTILES
+   ============================================ */
+
+@media (hover: none) and (pointer: coarse) {
+    /* Dispositivos táctiles */
+    
+    /* Aumentar áreas de toque */
+    .tab {
+        padding: 14px 28px;
+    }
+    
+    .factchecking-tab {
+        padding: 12px 20px;
+    }
+    
+    .theme-segment {
+        min-height: 20px;
+    }
+    
+    /* Desactivar hover effects que causan repaints */
+    .theme-segment:hover {
+        transform: none;
+    }
+    
+    .party-item:hover {
+        background: inherit;
+    }
+    
+    /* Simplificar transiciones */
+    .slider-handle {
+        transition: none;
+    }
+    
+    .slider-handle:not(.dragging) {
+        transition: left 0.15s ease-out;
+    }
+}
+
+/* ============================================
+   OPTIMIZACIÓN DE FUENTES
+   ============================================ */
+
+/* Evitar FOUT (Flash of Unstyled Text) */
+.ctn-header h1,
+.ctn-header h2,
+.comparison-header h2,
+.factchecking-header h2,
+.box-titulo-seccion h3 {
+    font-display: swap;
+}
+
+/* ============================================
+   FLOURISH EMBEDS OPTIMIZATION
+   ============================================ */
+
+/* Placeholder mientras carga */
+.flourish-embed {
+    min-height: 400px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+.flourish-embed[data-loaded="true"] {
+    animation: none;
+    background: none;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Reducir shimmer en prefer-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+    .flourish-embed {
+        animation: none;
+        background: #f5f5f5;
+    }
+}
+
+/* ============================================
+   DARK MODE PREP (por si se necesita)
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+    /* Placeholder para futuro dark mode */
+}
+
+/* ============================================
+   PRINT OPTIMIZATION
+   ============================================ */
+
+@media print {
+    .btn-ver-hojas,
+    #social,
+    .slider-handle,
+    .theme-slider,
+    video {
+        display: none !important;
+    }
+    
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
