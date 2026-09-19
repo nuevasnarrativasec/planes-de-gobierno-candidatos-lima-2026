@@ -84,14 +84,14 @@
     font: 3rem/1.05 'Guardian Egyp Bold', Georgia, serif;
     color: var(--color-primary);
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 800px;
 }
 
 .portada-titulo h2 {
-    font: 2rem/1.2 'Guardian Egyp Medium', Georgia, serif;
-    font-weight: 500;
+    font: 1.3rem / 1.5 'Guardian Egyp Medium', Georgia, serif;
     color: var(--color-primary);
-    margin: 8px auto 0;
+    margin: 20px auto 0;
+    max-width: 800px;
 }
 
 .portada-separador {
