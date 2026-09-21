@@ -3,7 +3,7 @@
         {
             "id": "1",
             "nombre": "Ahora Nación",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-ahora-nacion.png",
+            "logoUrl": "./img/logos/ahora-nacion.jpg",
             "densidad": {
                 "agricultura": 1,
                 "medio_ambiente": 3,
@@ -26,8 +26,8 @@
         },
         {
             "id": "2",
-            "nombre": "Alianza Fuerza y Libertad",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-alianza-fuerza-y-libertad.png",
+            "nombre": "Acción Popular",
+            "logoUrl": "./img/logos/accion-popular.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 2,
@@ -50,8 +50,8 @@
         },
         {
             "id": "3",
-            "nombre": "Alianza para el Progreso",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-app.png",
+            "nombre": "Acción Electoral Venceremos",
+            "logoUrl": "./img/logos/alianza-electoral-venceremos.jpg",
             "densidad": {
                 "agricultura": 9,
                 "medio_ambiente": 2,
@@ -74,8 +74,8 @@
         },
         {
             "id": "4",
-            "nombre": "Alianza Unidad Nacional",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-alianza-unidad-nacional.png?v2",
+            "nombre": "Alianza Para el Progreso",
+            "logoUrl": "./img/logos/alianza-para-el-progreso.jpg",
             "densidad": {
                 "agricultura": 2,
                 "medio_ambiente": 2,
@@ -98,8 +98,8 @@
         },
         {
             "id": "5",
-            "nombre": "Alianza Venceremos",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-venceremos.png",
+            "nombre": "Avanza País",
+            "logoUrl": "./img/logos/avanza-pais.jpg",
             "densidad": {
                 "agricultura": 4,
                 "medio_ambiente": 4,
@@ -122,8 +122,8 @@
         },
         {
             "id": "6",
-            "nombre": "Avanza País",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-avanza-pais.png",
+            "nombre": "Batalla Perú",
+            "logoUrl": "./img/logos/batalla-peru.jpg",
             "densidad": {
                 "agricultura": 3,
                 "medio_ambiente": 2,
@@ -146,8 +146,8 @@
         },
         {
             "id": "7",
-            "nombre": "Cooperación Popular",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-cooperacion-popular.png",
+            "nombre": "Coalición Transformadora Tierra Verde",
+            "logoUrl": "./img/logos/coalicion-transformadora-tierra-verde.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 17,
@@ -170,8 +170,8 @@
         },
         {
             "id": "8",
-            "nombre": "Fe en el Perú",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-fe-en-el-peru.png",
+            "nombre": "Frente Popular Agrícola FIA del Perú",
+            "logoUrl": "./img/logos/frepap.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 13,
@@ -194,8 +194,8 @@
         },
         {
             "id": "9",
-            "nombre": "Frente de la Esperanza",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-frente-esperanza.png",
+            "nombre": "Fuerza Ciudadana",
+            "logoUrl": "./img/logos/fuerza-ciudadana.jpg",
             "densidad": {
                 "agricultura": 2,
                 "medio_ambiente": 2,
@@ -242,8 +242,8 @@
         },
         {
             "id": "11",
-            "nombre": "Integridad Democrática",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-integridad-democratica.png",
+            "nombre": "Juntos por el Perú",
+            "logoUrl": "./img/logos/juntos-por-el-peru.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 2,
@@ -266,8 +266,8 @@
         },
         {
             "id": "12",
-            "nombre": "Juntos por el Perú",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-juntos-por-el-peru.png",
+            "nombre": "Partido Aprista Peruano",
+            "logoUrl": "./img/logos/partido-aprista-peruano.jpg",
             "densidad": {
                 "agricultura": 8,
                 "medio_ambiente": 7,
@@ -290,8 +290,8 @@
         },
         {
             "id": "13",
-            "nombre": "Libertad Popular",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-libertad-popular.png",
+            "nombre": "Partido Cívico Obras",
+            "logoUrl": "./img/logos/partido-civico-obras.jpg",
             "densidad": {
                 "agricultura": 4,
                 "medio_ambiente": 8,
@@ -314,8 +314,8 @@
         },
         {
             "id": "14",
-            "nombre": "País para Todos",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-pais-para-todos.png",
+            "nombre": "Partido del Buen Gobierno",
+            "logoUrl": "./img/logos/partido-del-buen-gobierno.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 3,
@@ -338,8 +338,8 @@
         },
         {
             "id": "15",
-            "nombre": "Partido Aprista Peruano",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-apra.png?v2",
+            "nombre": "Partido Demócrata Verde",
+            "logoUrl": "./img/logos/partido-democrata-verde.jpg",
             "densidad": {
                 "agricultura": 1,
                 "medio_ambiente": 5,
@@ -362,8 +362,8 @@
         },
         {
             "id": "16",
-            "nombre": "Partido Cívico Obras",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-obras.png",
+            "nombre": "Partido Democrático Somos Perú",
+            "logoUrl": "./img/logos/somos-peru.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 2,
@@ -386,8 +386,8 @@
         },
         {
             "id": "17",
-            "nombre": "Partido de los Trabajadores y Emprendedores",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-partido-de-los-trabajadores.png",
+            "nombre": "Partido Frente de la Esperanza 2021",
+            "logoUrl": "./img/logos/frente-de-la-esperanza.jpg?v2",
             "densidad": {
                 "agricultura": 6,
                 "medio_ambiente": 8,
@@ -410,8 +410,8 @@
         },
         {
             "id": "18",
-            "nombre": "Partido del Buen Gobierno",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-partido-del-buen-gobierno.png",
+            "nombre": "Partido Morado",
+            "logoUrl": "./img/logos/partido-morado.jpg",
             "densidad": {
                 "agricultura": 3,
                 "medio_ambiente": 7,
@@ -434,8 +434,8 @@
         },
         {
             "id": "19",
-            "nombre": "Partido Demócrata Unido Perú",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-unido-peru.png",
+            "nombre": "Partido Patriótico del Perú",
+            "logoUrl": "./img/logos/partido-patriotico-del-peru.jpg",
             "densidad": {
                 "agricultura": 10,
                 "medio_ambiente": 0,
@@ -458,8 +458,8 @@
         },
         {
             "id": "20",
-            "nombre": "Partido Demócrata Verde",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-partido-democrata-verde.png",
+            "nombre": "Partido Político Nacional Perú Libre",
+            "logoUrl": "./img/logos/peru-libre.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 5,
@@ -482,8 +482,8 @@
         },
         {
             "id": "21",
-            "nombre": "Partido Democrático Federal",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-partido-democratico-federal.png",
+            "nombre": "Partido Político Pueblo Consciente",
+            "logoUrl": "./img/logos/pueblo-consciente.jpg",
             "densidad": {
                 "agricultura": 3,
                 "medio_ambiente": 4,
@@ -506,8 +506,8 @@
         },
         {
             "id": "22",
-            "nombre": "Partido Morado",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-partido-morado.png",
+            "nombre": "Partido Popular Cristiano",
+            "logoUrl": "/img/logos/partido-popular-cristiano.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 8,
@@ -530,8 +530,8 @@
         },
         {
             "id": "23",
-            "nombre": "Partido Patriótico del Perú",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-ppp.png",
+            "nombre": "Podemos Perú",
+            "logoUrl": "./img/logos/podemos-peru.jpg",
             "densidad": {
                 "agricultura": 6,
                 "medio_ambiente": 3,
@@ -554,8 +554,8 @@
         },
         {
             "id": "24",
-            "nombre": "Partido Perú Moderno",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-peru-moderno.png",
+            "nombre": "Progresemos",
+            "logoUrl": "./img/logos/progresemos.jpg",
             "densidad": {
                 "agricultura": 5,
                 "medio_ambiente": 4,
@@ -578,8 +578,8 @@
         },
         {
             "id": "25",
-            "nombre": "Perú Acción",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-peru-accion.png",
+            "nombre": "Renovación Popular",
+            "logoUrl": "./img/logos/renovacion-popular.jpg",
             "densidad": {
                 "agricultura": 5,
                 "medio_ambiente": 6,
@@ -602,8 +602,8 @@
         },
         {
             "id": "26",
-            "nombre": "Perú Libre",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-peru-libre.png",
+            "nombre": "Visión Perú",
+            "logoUrl": "./img/logos/vision-peru.jpg",
             "densidad": {
                 "agricultura": 3,
                 "medio_ambiente": 8,
@@ -622,246 +622,6 @@
                 "seguridad": 8,
                 "transporte": 0,
                 "vivienda": 6
-            }
-        },
-        {
-            "id": "27",
-            "nombre": "Perú Primero",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-peru-primero.png",
-            "densidad": {
-                "agricultura": 4,
-                "medio_ambiente": 3,
-                "cambio_climatico": 3,
-                "cultura_turismo": 6,
-                "descentralizacion": 3,
-                "economia": 13,
-                "educacion": 10,
-                "energia_minera": 3,
-                "familia": 3,
-                "gobernanza_digital": 3,
-                "infraestructura": 5,
-                "justicia_dh": 8,
-                "programas_sociales": 18,
-                "salud": 11,
-                "seguridad": 5,
-                "transporte": 1,
-                "vivienda": 2
-            }
-        },
-        {
-            "id": "28",
-            "nombre": "Podemos Perú",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-podemos-peru.png",
-            "densidad": {
-                "agricultura": 3,
-                "medio_ambiente": 3,
-                "cambio_climatico": 2,
-                "cultura_turismo": 0,
-                "descentralizacion": 6,
-                "economia": 21,
-                "educacion": 9,
-                "energia_minera": 2,
-                "familia": 0,
-                "gobernanza_digital": 1,
-                "infraestructura": 8,
-                "justicia_dh": 6,
-                "programas_sociales": 16,
-                "salud": 10,
-                "seguridad": 4,
-                "transporte": 0,
-                "vivienda": 7
-            }
-        },
-        {
-            "id": "29",
-            "nombre": "Primero la Gente",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-primero-la-gente.png",
-            "densidad": {
-                "agricultura": 5,
-                "medio_ambiente": 1,
-                "cambio_climatico": 2,
-                "cultura_turismo": 0,
-                "descentralizacion": 3,
-                "economia": 7,
-                "educacion": 7,
-                "energia_minera": 4,
-                "familia": 3,
-                "gobernanza_digital": 7,
-                "infraestructura": 5,
-                "justicia_dh": 16,
-                "programas_sociales": 14,
-                "salud": 11,
-                "seguridad": 12,
-                "transporte": 0,
-                "vivienda": 5
-            }
-        },
-        {
-            "id": "30",
-            "nombre": "PRIN",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-prin.png",
-            "densidad": {
-                "agricultura": 2,
-                "medio_ambiente": 10,
-                "cambio_climatico": 6,
-                "cultura_turismo": 0,
-                "descentralizacion": 3,
-                "economia": 9,
-                "educacion": 13,
-                "energia_minera": 3,
-                "familia": 0,
-                "gobernanza_digital": 2,
-                "infraestructura": 10,
-                "justicia_dh": 10,
-                "programas_sociales": 16,
-                "salud": 9,
-                "seguridad": 5,
-                "transporte": 0,
-                "vivienda": 3
-            }
-        },
-        {
-            "id": "31",
-            "nombre": "Progresemos",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-progresemos.png",
-            "densidad": {
-                "agricultura": 4,
-                "medio_ambiente": 6,
-                "cambio_climatico": 1,
-                "cultura_turismo": 1,
-                "descentralizacion": 0,
-                "economia": 13,
-                "educacion": 15,
-                "energia_minera": 1,
-                "familia": 0,
-                "gobernanza_digital": 3,
-                "infraestructura": 6,
-                "justicia_dh": 9,
-                "programas_sociales": 17,
-                "salud": 11,
-                "seguridad": 10,
-                "transporte": 1,
-                "vivienda": 4
-            }
-        },
-        {
-            "id": "32",
-            "nombre": "Renovación Popular",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-renovacion-popular.png?v2",
-            "densidad": {
-                "agricultura": 7,
-                "medio_ambiente": 6,
-                "cambio_climatico": 0,
-                "cultura_turismo": 0,
-                "descentralizacion": 2,
-                "economia": 9,
-                "educacion": 4,
-                "energia_minera": 7,
-                "familia": 4,
-                "gobernanza_digital": 5,
-                "infraestructura": 7,
-                "justicia_dh": 9,
-                "programas_sociales": 14,
-                "salud": 11,
-                "seguridad": 4,
-                "transporte": 5,
-                "vivienda": 9
-            }
-        },
-        {
-            "id": "33",
-            "nombre": "Salvemos al Perú",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-salvemos-al-peru.png",
-            "densidad": {
-                "agricultura": 1,
-                "medio_ambiente": 7,
-                "cambio_climatico": 6,
-                "cultura_turismo": 5,
-                "descentralizacion": 4,
-                "economia": 14,
-                "educacion": 8,
-                "energia_minera": 4,
-                "familia": 0,
-                "gobernanza_digital": 3,
-                "infraestructura": 5,
-                "justicia_dh": 7,
-                "programas_sociales": 12,
-                "salud": 13,
-                "seguridad": 7,
-                "transporte": 0,
-                "vivienda": 5
-            }
-        },
-        {
-            "id": "34",
-            "nombre": "Sí Creo",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-si-creo.png",
-            "densidad": {
-                "agricultura": 6,
-                "medio_ambiente": 5,
-                "cambio_climatico": 0,
-                "cultura_turismo": 0,
-                "descentralizacion": 3,
-                "economia": 14,
-                "educacion": 9,
-                "energia_minera": 3,
-                "familia": 0,
-                "gobernanza_digital": 3,
-                "infraestructura": 8,
-                "justicia_dh": 11,
-                "programas_sociales": 9,
-                "salud": 12,
-                "seguridad": 11,
-                "transporte": 1,
-                "vivienda": 4
-            }
-        },
-        {
-            "id": "35",
-            "nombre": "Somos Perú",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-somos-peru.png",
-            "densidad": {
-                "agricultura": 5,
-                "medio_ambiente": 8,
-                "cambio_climatico": 4,
-                "cultura_turismo": 2,
-                "descentralizacion": 2,
-                "economia": 12,
-                "educacion": 9,
-                "energia_minera": 0,
-                "familia": 1,
-                "gobernanza_digital": 3,
-                "infraestructura": 9,
-                "justicia_dh": 8,
-                "programas_sociales": 17,
-                "salud": 10,
-                "seguridad": 6,
-                "transporte": 3,
-                "vivienda": 2
-            }
-        },
-        {
-            "id": "36",
-            "nombre": "Un Camino Diferente",
-            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/logos/logo-un-camino-diferente.png",
-            "densidad": {
-                "agricultura": 2,
-                "medio_ambiente": 2,
-                "cambio_climatico": 2,
-                "cultura_turismo": 0,
-                "descentralizacion": 0,
-                "economia": 20,
-                "educacion": 6,
-                "energia_minera": 1,
-                "familia": 0,
-                "gobernanza_digital": 3,
-                "infraestructura": 16,
-                "justicia_dh": 12,
-                "programas_sociales": 12,
-                "salud": 2,
-                "seguridad": 15,
-                "transporte": 6,
-                "vivienda": 0
             }
         }
     ]
