@@ -352,6 +352,23 @@
     margin-bottom: 10px;
 }
 
+/* Caso especial: candidato que postula como primer regidor */
+.candidate-asterisk {
+    color: #B5651D;
+    font-weight: 800;
+    margin-left: 3px;
+    vertical-align: super;
+    font-size: 0.9em;
+    line-height: 0;
+}
+
+.candidate-note-regidor {
+    color: #B5651D;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: -6px 0 10px;
+}
+
 .candidate-vices {
     display: none;
     line-height: 1.3;

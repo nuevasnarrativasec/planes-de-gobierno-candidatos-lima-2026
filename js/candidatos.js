@@ -193,12 +193,20 @@ function renderDetails(item) {
         ? `<a href="${item.planurl}" target="_blank" class="btn btn-primary" style="text-decoration: none;">Descarga el plan</a>`
         : `<button class="btn btn-primary" disabled style="opacity: 0.5; cursor: not-allowed;">Plan no disponible</button>`;
     
+    // Caso especial: Rafael López Aliaga postula como primer regidor
+    const esPrimerRegidor = (item.candidato || '')
+        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase().includes('lopez aliaga');
+    const asteriscoHTML = esPrimerRegidor ? '<span class="candidate-asterisk">*</span>' : '';
+    const notaRegidorHTML = esPrimerRegidor ? '<div class="candidate-note-regidor">Postula como primer regidor</div>' : '';
+
     detailPanel.innerHTML = `
         <div class="candidate-profile">
             <div class="box-main-avatar">
                 <div class="avatar">${avatarHTML}</div>
-                <div class="candidate-name">${item.candidato || 'Sin información'}</div>
-                <div class="party-label">${item.nombrepartido || 'Sin información'}</div>                        
+                <div class="candidate-name">${item.candidato || 'Sin información'}${asteriscoHTML}</div>
+                <div class="party-label">${item.nombrepartido || 'Sin información'}</div>
+                ${notaRegidorHTML}
             </div>   
             
             <div class="box-main-buttons">
