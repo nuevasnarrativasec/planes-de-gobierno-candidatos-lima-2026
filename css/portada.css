@@ -27,6 +27,7 @@
 }
 
 .portada-face {
+    position: relative;
     padding: 0;
     border: none;
     background: transparent;
@@ -35,6 +36,44 @@
     line-height: 0;
     border-radius: 8px;
     transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+/* Tooltip informativo (ej: candidato sin postulacion a alcaldia) */
+.portada-face-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-text);
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    line-height: 1.4;
+    width: 200px;
+    margin-bottom: 10px;
+    box-shadow: var(--shadow-md);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-fast);
+    pointer-events: none;
+}
+
+.portada-face-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: var(--color-text);
+}
+
+.portada-face--tooltip:hover .portada-face-tooltip,
+.portada-face--tooltip:focus-visible .portada-face-tooltip {
+    opacity: 1;
+    visibility: visible;
 }
 
 .portada-face img {
