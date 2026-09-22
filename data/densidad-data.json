@@ -3,7 +3,7 @@
         {
             "id": "1",
             "nombre": "Acción Popular",
-            "logoUrl": "./img/logos/accion-popular.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/accion-popular.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 6,
@@ -27,7 +27,7 @@
         {
             "id": "2",
             "nombre": "Ahora Nación",
-            "logoUrl": "./img/logos/ahora-nacion.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/ahora-nacion.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 4,
@@ -51,7 +51,7 @@
         {
             "id": "3",
             "nombre": "Acción Electoral Venceremos",
-            "logoUrl": "./img/logos/alianza-electoral-venceremos.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/alianza-electoral-venceremos.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 3,
@@ -75,7 +75,7 @@
         {
             "id": "4",
             "nombre": "Alianza Para el Progreso",
-            "logoUrl": "./img/logos/alianza-para-el-progreso.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/alianza-para-el-progreso.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 2,
@@ -99,7 +99,7 @@
         {
             "id": "5",
             "nombre": "Avanza País",
-            "logoUrl": "./img/logos/avanza-pais.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/avanza-pais.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 4,
@@ -123,7 +123,7 @@
         {
             "id": "6",
             "nombre": "Batalla Perú",
-            "logoUrl": "./img/logos/batalla-peru.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/batalla-peru.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 33,
@@ -147,7 +147,7 @@
         {
             "id": "7",
             "nombre": "Coalición Transformadora Tierra Verde",
-            "logoUrl": "./img/logos/coalicion-transformadora-tierra-verde.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/coalicion-transformadora-tierra-verde.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 2,
@@ -171,7 +171,7 @@
         {
             "id": "8",
             "nombre": "Frente Popular Agrícola FIA del Perú",
-            "logoUrl": "./img/logos/frepap.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/frepap.jpg",
             "densidad": {
                 "agricultura": 5,
                 "medio_ambiente": 14,
@@ -195,7 +195,7 @@
         {
             "id": "9",
             "nombre": "Fuerza Ciudadana",
-            "logoUrl": "./img/logos/fuerza-ciudadana.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/fuerza-ciudadana.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 22,
@@ -243,7 +243,7 @@
         {
             "id": "11",
             "nombre": "Juntos por el Perú",
-            "logoUrl": "./img/logos/juntos-por-el-peru.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/juntos-por-el-peru.jpg",
             "densidad": {
                 "agricultura": 6,
                 "medio_ambiente": 1,
@@ -267,7 +267,7 @@
         {
             "id": "12",
             "nombre": "Partido Aprista Peruano",
-            "logoUrl": "./img/logos/partido-aprista-peruano.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/partido-aprista-peruano.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 9,
@@ -291,7 +291,7 @@
         {
             "id": "13",
             "nombre": "Partido Cívico Obras",
-            "logoUrl": "./img/logos/partido-civico-obras.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/partido-civico-obras.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 5,
@@ -315,7 +315,7 @@
         {
             "id": "14",
             "nombre": "Partido del Buen Gobierno",
-            "logoUrl": "./img/logos/partido-del-buen-gobierno.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/partido-del-buen-gobierno.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 10,
@@ -339,7 +339,7 @@
         {
             "id": "15",
             "nombre": "Partido Demócrata Verde",
-            "logoUrl": "./img/logos/partido-democrata-verde.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/partido-democrata-verde.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 9,
@@ -363,7 +363,7 @@
         {
             "id": "16",
             "nombre": "Partido Democrático Somos Perú",
-            "logoUrl": "./img/logos/somos-peru.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/somos-peru.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 5,
@@ -387,7 +387,7 @@
         {
             "id": "17",
             "nombre": "Partido Frente de la Esperanza 2021",
-            "logoUrl": "./img/logos/frente-de-la-esperanza.jpg?v2",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/frente-de-la-esperanza.jpg?v2",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 7,
@@ -411,7 +411,7 @@
         {
             "id": "18",
             "nombre": "Partido Morado",
-            "logoUrl": "./img/logos/partido-morado.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/partido-morado.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 7,
@@ -435,7 +435,7 @@
         {
             "id": "19",
             "nombre": "Partido Patriótico del Perú",
-            "logoUrl": "./img/logos/partido-patriotico-del-peru.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/partido-patriotico-del-peru.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 18,
@@ -459,7 +459,7 @@
         {
             "id": "20",
             "nombre": "Partido Político Nacional Perú Libre",
-            "logoUrl": "./img/logos/peru-libre.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/peru-libre.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 4,
@@ -483,7 +483,7 @@
         {
             "id": "21",
             "nombre": "Partido Político Pueblo Consciente",
-            "logoUrl": "./img/logos/pueblo-consciente.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/pueblo-consciente.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 13,
@@ -507,7 +507,7 @@
         {
             "id": "22",
             "nombre": "Partido Popular Cristiano",
-            "logoUrl": "/img/logos/partido-popular-cristiano.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/partido-popular-cristiano.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 11,
@@ -531,7 +531,7 @@
         {
             "id": "23",
             "nombre": "Podemos Perú",
-            "logoUrl": "./img/logos/podemos-peru.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/podemos-peru.jpg",
             "densidad": {
                 "agricultura": 3,
                 "medio_ambiente": 0,
@@ -555,7 +555,7 @@
         {
             "id": "24",
             "nombre": "Progresemos",
-            "logoUrl": "./img/logos/progresemos.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/progresemos.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 21,
@@ -579,7 +579,7 @@
         {
             "id": "25",
             "nombre": "Renovación Popular",
-            "logoUrl": "./img/logos/renovacion-popular.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/renovacion-popular.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 7,
@@ -603,7 +603,7 @@
         {
             "id": "26",
             "nombre": "Visión Perú",
-            "logoUrl": "./img/logos/vision-peru.jpg",
+            "logoUrl": "https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/img/logos/vision-peru.jpg",
             "densidad": {
                 "agricultura": 0,
                 "medio_ambiente": 8,
