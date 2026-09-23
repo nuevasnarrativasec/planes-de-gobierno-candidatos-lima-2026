@@ -198,7 +198,7 @@
 }
 
 .slider-handle:hover {
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: translate(0) scale(1);
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
@@ -356,20 +356,21 @@
 /* ============================================
    THEME COLORS
    ============================================ */
-.theme-agricultura { background-color: var(--theme-agricultura); }
-.theme-medio_ambiente { background-color: var(--theme-ambiente); }
-.theme-cambio_climatico { background-color: var(--theme-cambio-climatico); }
-.theme-cultura_turismo { background-color: var(--theme-cultura); }
-.theme-descentralizacion { background-color: var(--theme-descentralizacion); }
-.theme-economia { background-color: var(--theme-economia); }
-.theme-educacion { background-color: var(--theme-educacion); }
-.theme-energia_minera { background-color: var(--theme-energia); }
-.theme-familia { background-color: var(--theme-familia); }
-.theme-gobernanza_digital { background-color: var(--theme-gobernanza); }
-.theme-infraestructura { background-color: var(--theme-infraestructura); }
-.theme-justicia_dh { background-color: var(--theme-justicia); }
-.theme-programas_sociales { background-color: var(--theme-programas-sociales); }
+.theme-agua_saneamiento { background-color: var(--theme-agricultura); }
+.theme-bienestar_animal { background-color: var(--theme-ambiente); }
+.theme-cultura_patrimonio_turismo_deporte { background-color: var(--theme-cambio-climatico); }
+.theme-desarrollo_economico_comercio { background-color: var(--theme-cultura); }
+.theme-educacion { background-color: var(--theme-descentralizacion); }
+.theme-espacio_publico_areas_verdes { background-color: var(--theme-economia); }
+.theme-gestion_municipal { background-color: var(--theme-educacion); }
+.theme-gestion_riesgos_cambio_climatico_el_nino { background-color: var(--theme-energia); }
+.theme-gobernanza_digital { background-color: var(--theme-familia); }
+.theme-infraestructura_vial { background-color: var(--theme-gobernanza); }
+.theme-medio_ambiente_residuos { background-color: var(--theme-infraestructura); }
+.theme-participacion_transparencia { background-color: var(--theme-justicia); }
+.theme-proteccion_social_cuidados { background-color: var(--theme-programas-sociales); }
 .theme-salud { background-color: var(--theme-salud); }
-.theme-seguridad { background-color: var(--theme-seguridad); }
-.theme-transporte { background-color: var(--theme-transporte); }
-.theme-vivienda { background-color: var(--theme-vivienda); }
+.theme-seguridad_ciudadana { background-color: var(--theme-seguridad); }
+.theme-transporte_movilidad { background-color: var(--theme-transporte); }
+.theme-urbanismo_ordenamiento { background-color: var(--theme-vivienda); }
+.theme-vivienda_mejoramiento_barrial { background-color: var(--theme-justicia); }

@@ -13,28 +13,29 @@ const CONFIG = {
     COMPARISON_SPREADSHEET_URL: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQpCcYTHdbCr77N5drH--fPo7ysN1RvbyMnyk9PgmOcmoKRV4FsIJMJdTPzDNsN8FiTLOEDntsvZiaE/pub?output=csv',
 
     // Datos de densidad discursiva (JSON local; reemplazar con la data de Lima 2026)
-    DENSITY_DATA_URL: 'https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/data/densidad-data.json'
+    DENSITY_DATA_URL: './data/densidad-data.json'
 };
 
 // Temas para densidad discursiva (seccion "Peso de los temas")
 const THEMES = [
-    { id: 'agricultura', name: 'AGRICULTURA', color: '#3B82F6' },
-    { id: 'medio_ambiente', name: 'AMBIENTE', color: '#EF4444' },
-    { id: 'cambio_climatico', name: 'CAMBIO CLIMATICO', color: '#10B981' },
-    { id: 'cultura_turismo', name: 'CULTURA Y TURISMO', color: '#F59E0B' },
-    { id: 'descentralizacion', name: 'DESCENTRALIZACION', color: '#8B5CF6' },
-    { id: 'economia', name: 'ECONOMIA', color: '#06B6D4' },
-    { id: 'educacion', name: 'EDUCACION', color: '#06B6D4' },
-    { id: 'energia_minera', name: 'ENERGIA MINERA', color: '#06B6D4' },
-    { id: 'familia', name: 'FAMILIA', color: '#06B6D4' },
+    { id: 'agua_saneamiento', name: 'AGUA Y SANEAMIENTO', color: '#3B82F6' },
+    { id: 'bienestar_animal', name: 'BIENESTAR ANIMAL', color: '#EF4444' },
+    { id: 'cultura_patrimonio_turismo_deporte', name: 'CULTURA', color: '#10B981' },
+    { id: 'desarrollo_economico_comercio', name: 'DESARROLLO ECONÓMICO', color: '#F59E0B' },
+    { id: 'educacion', name: 'EDUCACIÓN', color: '#8B5CF6' },
+    { id: 'espacio_publico_areas_verdes', name: 'AREAS VERDES', color: '#06B6D4' },
+    { id: 'gestion_municipal', name: 'GESTIÓN', color: '#06B6D4' },
+    { id: 'gestion_riesgos_cambio_climatico_el_nino', name: 'CAMBIO CLIMÁTICO', color: '#06B6D4' },
     { id: 'gobernanza_digital', name: 'GOBERNANZA DIGITAL', color: '#06B6D4' },
-    { id: 'infraestructura', name: 'INFRAESTRUCTURA', color: '#06B6D4' },
-    { id: 'justicia_dh', name: 'JUSTICIA', color: '#06B6D4' },
-    { id: 'programas_sociales', name: 'PROGRAMAS SOCIALES', color: '#06B6D4' },
+    { id: 'infraestructura_vial', name: 'INFRAESTRUCTURA VIAL', color: '#06B6D4' },
+    { id: 'medio_ambiente_residuos', name: 'MEDIO AMBIENTE', color: '#06B6D4' },
+    { id: 'participacion_transparencia', name: 'PARTICIPACIÓN CIUDADANA', color: '#06B6D4' },
+    { id: 'proteccion_social_cuidados', name: 'PROTECCIÓN SOCIAL', color: '#06B6D4' },
     { id: 'salud', name: 'SALUD', color: '#06B6D4' },
-    { id: 'seguridad', name: 'SEGURIDAD', color: '#06B6D4' },
-    { id: 'transporte', name: 'TRANSPORTE', color: '#06B6D4' },
-    { id: 'vivienda', name: 'VIVIENDA', color: '#06B6D4' }
+    { id: 'seguridad_ciudadana', name: 'SEGURIDAD', color: '#06B6D4' },
+    { id: 'transporte_movilidad', name: 'TRANSPORTE', color: '#06B6D4' },
+    { id: 'urbanismo_ordenamiento', name: 'URBANISMO', color: '#06B6D4' },
+    { id: 'vivienda_mejoramiento_barrial', name: 'VIVIENDA', color: '#06d409ff' }
 ];
 
 /* ============================================
