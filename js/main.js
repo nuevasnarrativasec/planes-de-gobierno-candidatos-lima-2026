@@ -82,6 +82,9 @@ async function init() {
         await loadComparisonData();
         renderComparisonCards();
 
+        // Cargar datos de factchecking
+        await loadFactcheckingData();
+
         // Densidad discursiva ("Peso de los temas")
         await loadDensityData();
         initThemeSlider();
@@ -179,11 +182,73 @@ function initMetodologia() {
 }
 
 /* ============================================
+   SCROLL CONTAINER (TARJETAS)
+   ============================================ */
+
+/**
+ * Inicializar scroll container horizontal (tarjetas "Prioridades y olvidos")
+ * Optimizado para iOS con passive events
+ */
+function initScrollContainer() {
+    const slider = document.querySelector('.scroll-container');
+    if (!slider) return;
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    // Mouse events
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    }, { passive: true });
+
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    }, { passive: true });
+
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    }, { passive: true });
+
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2;
+        slider.scrollLeft = scrollLeft - walk;
+    });
+
+    // Touch events optimizados para iOS
+    slider.addEventListener('touchstart', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.touches[0].pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    }, { passive: true });
+
+    slider.addEventListener('touchend', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    }, { passive: true });
+
+    slider.addEventListener('touchcancel', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    }, { passive: true });
+}
+
+/* ============================================
    DOM CONTENT LOADED
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', function() {
     initMetodologia();
+    initScrollContainer();
 });
 
 /* ============================================

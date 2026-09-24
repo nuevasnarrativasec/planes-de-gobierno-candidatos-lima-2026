@@ -13,7 +13,12 @@ const CONFIG = {
     COMPARISON_SPREADSHEET_URL: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQpCcYTHdbCr77N5drH--fPo7ysN1RvbyMnyk9PgmOcmoKRV4FsIJMJdTPzDNsN8FiTLOEDntsvZiaE/pub?output=csv',
 
     // Datos de densidad discursiva (JSON local; reemplazar con la data de Lima 2026)
-    DENSITY_DATA_URL: 'https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/data/densidad-data.json?v2'
+    DENSITY_DATA_URL: 'https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/data/densidad-data.json?v2',
+
+    // Hoja de factchecking (seccion "¿Se pueden cumplir estas promesas?")
+    // >>> PENDIENTE: reemplazar con la hoja de factchecking de Lima 2026 <<<
+    // Mientras esta vacia, la seccion mostrara una tarjeta de ejemplo (fallback automatico).
+    FACTCHECKING_SPREADSHEET_URL: ''
 };
 
 // Temas para densidad discursiva (seccion "Peso de los temas")

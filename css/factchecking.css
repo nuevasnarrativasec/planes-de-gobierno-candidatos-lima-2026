@@ -1,0 +1,346 @@
+/* ============================================
+   FACTCHECKING SECTION
+   ============================================ */
+.factchecking-section {
+    max-width: 1000px;
+    margin: var(--spacing-xl) auto;
+    padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.factchecking-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.factchecking-header h2 {
+    font: 1.7rem/1.2 'Guardian Egyp Bold';
+    margin-bottom: 15px;
+}
+
+.factchecking-header p {
+    font: 1rem/1.5 "Roboto", sans-serif;
+    margin: 0 auto 25px;
+    max-width: 630px;
+    text-align: center;
+}
+    .factchecking-header p span{
+        display: block;
+        font-style: italic;
+    }
+
+span.filtrar {
+    color: #5f5f5f;
+    display: block;
+    font: 1rem/1.5 "Roboto", sans-serif;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+
+/* ============================================
+   FACTCHECKING TABS
+   ============================================ */
+.factchecking-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.factchecking-tab {
+    padding: 10px 20px;
+    border: none;
+    background: transparent;
+    color: var(--color-text-light);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+}
+
+.factchecking-tab:hover {
+    color: var(--color-text);
+}
+
+.factchecking-tab.active {
+    color: var(--color-text);
+    border-bottom-color: var(--color-text);
+    font-weight: 600;
+}
+
+/* ============================================
+   FACTCHECKING DROPDOWN
+   ============================================ */
+.factchecking-dropdown-container {
+    max-width: 500px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.factchecking-dropdown {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    font-size: .9rem;
+    outline: none;
+    transition: border-color var(--transition-normal);
+    font-family: inherit;
+    background: white;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 20px;
+}
+
+.factchecking-dropdown:focus {
+    border-color: #1a1a2e;
+}
+
+.factchecking-dropdown:hover {
+    border-color: #999;
+}
+
+/* ============================================
+   FACTCHECKING GRID
+   ============================================ */
+.factchecking-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+    gap: 25px;
+}
+
+/* ============================================
+   FACTCHECKING CARDS
+   ============================================ */
+.factchecking-card {
+    background: white;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    border: 1px solid var(--color-border);
+}
+
+.factchecking-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.factchecking-card-header {
+    padding: var(--spacing-md);
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.factchecking-card-header h3 {
+    color: var(--color-text);
+    margin-bottom: 5px;
+    font: 1rem/1.2 'Guardian Egyp Bold';
+}
+
+.factchecking-card-intro {
+    font-size: 13px;
+    color: var(--color-text-light);
+    margin: 0 auto;
+}
+
+.factchecking-frase {
+    font: .9rem/1.3 "Roboto", sans-serif;
+    color: var(--color-text);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-md) 0;
+}
+
+/* ============================================
+   VEREDICTO STYLES
+   ============================================ */
+.factchecking-veredicto {
+    padding: 0;
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+
+.factchecking-veredicto-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    padding: 10px var(--spacing-md);
+}
+
+.factchecking-veredicto-text {
+    font-size: .9rem;
+    line-height: 1.5;
+    color: #383d41;
+    padding: 0 var(--spacing-md);
+}
+
+.veredicto-descripcion {
+    display: none;
+    text-transform: none;
+    font-weight: 300;
+    letter-spacing: normal;
+    margin-top: 5px;
+    font-size: .8rem;
+    line-height: 1.4;
+}
+
+/* Veredicto Colors */
+.factchecking-veredicto.factible .factchecking-veredicto-label {
+    color: white;
+    background: var(--color-viable);
+}
+
+.factchecking-veredicto.inviable .factchecking-veredicto-label {
+    color: white;
+    background: var(--color-inviable);
+}
+
+.factchecking-veredicto.requiere_accion .factchecking-veredicto-label {
+    color: white;
+    background: var(--color-requiere-accion);
+}
+
+.factchecking-veredicto.enganosa .factchecking-veredicto-label {
+    color: white;
+    background: var(--color-enganosa);
+}
+
+.factchecking-veredicto.inexacta .factchecking-veredicto-label {
+    color: white;
+    background: var(--color-inexacta);
+}
+
+.factchecking-veredicto.indeterminado .factchecking-veredicto-label {
+    color: #383d41;
+    background: var(--color-indeterminado);
+}
+
+.factchecking-veredicto.verdadera .factchecking-veredicto-label {
+    color: white;
+    background: var(--color-viable);
+}
+
+.factchecking-veredicto.falsa .factchecking-veredicto-label {
+    color: white;
+    background: var(--color-inviable);
+}
+
+.factchecking-veredicto.no_en_sus_manos .factchecking-veredicto-label {
+    color: #fff;
+    background: #5a6478;
+}
+
+.factchecking-veredicto.sin_sustento .factchecking-veredicto-label {
+    color: #fff;
+    background: #76664a;
+}
+
+/* ============================================
+   FUENTES
+   ============================================ */
+.factchecking-fuentes {
+    font-size: 12px;
+    color: var(--color-text-light);
+    padding: var(--spacing-md);
+}
+
+.factchecking-fuentes strong {
+    color: var(--color-text);
+}
+
+.factchecking-fuentes a {
+    color: var(--color-primary);
+    text-decoration: none;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+.factchecking-fuentes a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   NO RESULTS & LOADING
+   ============================================ */
+.factchecking-no-results {
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+    color: var(--color-text-light);
+}
+
+.factchecking-no-results svg {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+.factchecking-loading {
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+    color: var(--color-text-light);
+}
+
+.factchecking-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #f0f0f0;
+    border-top-color: #4CAF50;
+    border-radius: var(--radius-full);
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ============================================
+   LOAD MORE BUTTON
+   ============================================ */
+.factchecking-load-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+}
+
+.load-more-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    background: white;
+    border: 2px solid var(--color-text);
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.load-more-btn:hover {
+    background: var(--color-text);
+    color: white;
+}
+
+.load-more-btn svg {
+    transition: transform var(--transition-normal);
+}
+
+.load-more-btn:hover svg {
+    transform: translateY(3px);
+}
+
+.load-more-count {
+    font-size: 13px;
+    color: #888;
+}

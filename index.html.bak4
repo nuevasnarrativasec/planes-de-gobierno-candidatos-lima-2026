@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- CSS Principal (importa todos los modulos) -->
-    <link rel="stylesheet" href="./css/style.css?v6">
+    <link rel="stylesheet" href="./css/style.css?V2">
     <link rel="stylesheet" href="https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/css/portada.css">
 
     <style>
@@ -76,7 +76,7 @@
             z-index: -1 !important;
         }
         body{
-            /*overflow-y: scroll !important;*/
+            overflow-y: scroll !important;
         }
         .content-layout-container {
             background-color: transparent !important;
@@ -355,186 +355,6 @@
                 <!-- Tarjetas de comparacion se generan dinamicamente -->
             </div>
         </div>
-        <!-- ============================================
-             SECCIÓN: FACTCHECKING
-             ============================================ -->
-        <section class="factchecking-section" id="factcheckingSection">
-            <div class="factchecking-header">
-                <h2>¿Se pueden cumplir estas promesas?</h2>
-                <p>
-                    Analizamos tres propuestas clave en Salud y Educación para poner a prueba nuestra clasificación. Seleccionamos estos ejemplos específicos para mostrarte cómo diferenciamos una promesa que se puede cumplir de una que no tiene sustento.
-                </p>
-            </div>
-
-            <!-- Acordeón de conceptos -->
-            <div class="conceptos-accordion" id="conceptosAccordion3">
-                <button class="conceptos-accordion-header" onclick="toggleConceptosAccordion('conceptosAccordion3')">
-                    <div class="conceptos-accordion-icon">
-                        <img src="https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/icon-concepto-amarillo.jpg" alt="" width="100%">
-                    </div>
-                    <span class="conceptos-accordion-title">Guía de resultados</span>
-                    <svg class="conceptos-accordion-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                </button>
-                <div class="conceptos-accordion-content">
-                    <div class="conceptos-accordion-body">
-                        <div class="concepto-section">
-                            <p>
-                              Este análisis clasifica una muestra de propuestas bajo los siguientes criterios: <b>Factible</b>, si cuenta con viabilidad y mecanismos técnicos para su ejecución; <b>Engañosa</b>, si plantea metas o plazos que exceden las capacidades del Ejecutivo; <b>No está en sus manos</b>, si su cumplimiento depende de otros poderes u organismos; <b>Sin sustento</b>, si carece de información técnica suficiente para determinar su viabilidad; e <b>Inviable</b>, si contraviene el marco legal o excede el periodo de gestión.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <span class="filtrar">Filtrar por:</span>
-
-            <!-- Tabs de filtro -->
-            <div class="factchecking-tabs">
-                <button class="factchecking-tab active" data-filter="partido" onclick="switchFactcheckingTab('partido')">Partido</button>
-                <button class="factchecking-tab" data-filter="candidato" onclick="switchFactcheckingTab('candidato')">Candidato</button>
-                <button class="factchecking-tab" data-filter="veredicto" onclick="switchFactcheckingTab('veredicto')">Resultado</button>
-            </div>
-
-            <!-- Dropdowns de filtro -->
-            <div class="factchecking-dropdown-container" id="factcheckingPartidoContainer">
-                <select class="factchecking-dropdown" id="factcheckingPartidoDropdown" onchange="handlePartidoChange()">
-                    <option value="">Seleccionar partido...</option>
-                </select>
-            </div>
-
-            <div class="factchecking-dropdown-container" id="factcheckingCandidatoContainer" style="display: none;">
-                <select class="factchecking-dropdown" id="factcheckingCandidatoDropdown" onchange="handleCandidatoChange()">
-                    <option value="">Seleccionar candidato...</option>
-                </select>
-            </div>
-
-            <div class="factchecking-dropdown-container" id="factcheckingVeredictoContainer" style="display: none;">
-                <select class="factchecking-dropdown" id="factcheckingVeredictoDropdown" onchange="handleVeredictoChange()">
-                    <option value="">Seleccionar resultado...</option>                    
-                    <option value="factible">Factible</option>
-                    <option value="enganosa">Engañosa</option>
-                    <option value="inviable">Inviable</option>
-                    <option value="sin_sustento">Sin sustento</option>
-                    <option value="no_en_sus_manos">No está en sus manos</option>
-                </select>
-            </div>
-
-            <!-- Loading -->
-            <div class="factchecking-loading" id="factcheckingLoading">
-                <div class="factchecking-spinner"></div>
-                <p>Cargando datos...</p>
-            </div>
-
-            <!-- Grid de cards -->
-            <div class="factchecking-grid" id="factcheckingGrid" style="display: none;"></div>   
-
-            <!-- Botón Ver Más -->
-            <div class="factchecking-load-more" id="factcheckingLoadMore" style="display: none;">
-                <button class="load-more-btn" onclick="loadMoreFactchecking()">
-                    Ver más
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">                    
-                        <path d="M6 9l6 6 6-6"/>
-                    </svg>
-                </button>
-                <span class="load-more-count" id="loadMoreCount"></span>
-            </div>
-
-            <!-- No results -->
-            <div class="factchecking-no-results" id="factcheckingNoResults" style="display: none;">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <path d="M21 21l-4.35-4.35"></path>
-                </svg>
-                <p>No se encontraron resultados</p>
-            </div>
-
-            <!-- Estado inicial -->
-            <div class="factchecking-initial" id="factcheckingInitial"></div>
-        </section>
-
-        <!-- ============================================
-             SECCIÓN: ¿SABÍAS QUE? (Tarjetas horizontales)
-             ============================================ -->
-        <div class="box-titulo-seccion">
-            <span class="linea-titulo-seccion"></span>
-            <h3>Prioridades y olvidos </h3>
-            <p>Descubre qué temas dominan la agenda y cuáles han sido ignorados por los partidos.</p>            
-            <img src="https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/icon-horizontal-scroll.png" alt="" width="100%">
-            <span>Has scroll horizontal</span>
-        </div>
-        
-        <div class="main-tarjetas">
-            <div class="scroll-container">
-                <div class="card theme-pink">
-                    <div class="icon-box">
-                        <img src="https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/icon-card-1.jpg" alt="" width="100%">
-                    </div>
-                    <h3>Cobertura por plan</h3>
-                    <div class="color-line"></div>
-                    <p>La amplitud temática variable: <span>hay planes que cubren hasta 17 ejes, frente a otros que apenas llegan a 3.</span> El promedio se mantiene en 12 temas por partido.</p>
-                    <div class="separator-dotted"></div>
-                    <p>Muchos temas indican amplitud, no necesariamente mejor sustento.</p>
-                </div>
-
-                <div class="card theme-blue">
-                    <div class="icon-box">
-                        <img src="https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/icon-card-2.jpg" alt="" width="100%">
-                    </div>
-                    <h3>Agenda compartida</h3>
-                    <div class="color-line"></div>
-                    <p>Cuatro temas figuran en la agenda de casi todos los partidos: <span>Desarrollo Económico y Comercio, Medio Ambiente y Residuos, Seguridad Ciudadana y Transporte y Movilidad.</span> Son eje base de sus propuestas.</p>
-                    <div class="separator-dotted"></div>
-                    <p>Alta presencia = tema transversal en la agenda.</p>
-                </div>
-
-                <div class="card theme-yellow">
-                    <div class="icon-box">
-                        <img src="https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/icon-card-3.jpg" alt="" width="100%">
-                    </div>
-                    <h3>Temas menos presentes</h3>
-                    <div class="color-line"></div>
-                    <p>Ejes como <span>Bienestar animal, Espacio Público y Áreas verdes,</span> aparecen de forma escueta o son ignorados por las agrupaciones.</p>
-                    <div class="separator-dotted"></div>
-                    <p>Baja presencia ≠ irrelevancia</p>
-                </div>
-
-                <div class="card theme-orange">
-                    <div class="icon-box">
-                        <img src="https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/icon-card-4.jpg" alt="" width="100%">
-                    </div>
-                    <h3>Más espacio en los planes (promedio)</h3>
-                    <div class="color-line"></div>
-                    <p style="margin-top: auto; margin-bottom: auto;"><span>Urbanismo y ordenamiento (9.86%) y Seguridad ciudadana (9.79%)</span> dominan la narrativa, consumiendo casi un tercio del texto total de los planes. Le siguen Gestión municipal y Desarrollo económico y comercio.</p>
-                    <div class="separator-dotted"></div>
-                    <p>Más porcentaje = más espacio, no mejor propuesta.</p>
-                </div>
-
-                <div class="card theme-cyan">
-                    <div class="icon-box">
-                        <img src="https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/icon-card-5.jpg" alt="" width="100%">
-                    </div>
-                    <h3>Menos espacio en los planes (promedio)</h3>
-                    <div class="color-line"></div>
-                    <p style="margin-top: auto; margin-bottom: auto;"><span>Bienestar animal (0.80%) y Espacio público y Áreas verdes (2.33%)</span> ocupan un espacio insignificante en la redacción de los documentos.</p>
-                    <div class="separator-dotted"></div>
-                    <p>Poco espacio no representa calidad.</p>
-                </div>
-
-                <div class="card theme-teal">
-                    <div class="icon-box">
-                        <img src="https://nuevasnarrativasec.github.io/planes-de-gobierno-2026/img/icon-card-6.jpg" alt="" width="100%">
-                    </div>
-                    <h3>Tema dominante por plan</h3>
-                    <div class="color-line"></div>
-                    <p style="margin-top: auto; margin-bottom: auto;">El Urbanismo y ordenamiento no solo es transversal, <span>sino que es el tema que acapara mayor volumen de palabras (9.86%)</span> en el promedio de los planes.</p>
-                    <div class="separator-dotted"></div>
-                    <p>Muestra prioridad, mas no la profundidad.</p>
-                </div>
-            </div>
-        </div>  
-
 
                 <!-- ============================================
              SECCION: PANORAMA GENERAL
@@ -691,19 +511,18 @@
          SCRIPTS
          ============================================ -->
     <!-- Configuracion global y utilidades -->
-    <script src="./js/config.js?v8"></script>
+    <script src="./js/config.js?v7"></script>
 
     <!-- Modulos de funcionalidad -->
-    <script src="./js/candidatos.js?v6"></script>
-    <script src="./js/comparador.js?v7"></script>
-    <script src="./js/factchecking.js?v1"></script>
+    <script src="https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/js/candidatos.js?v6"></script>
+    <script src="https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/js/comparador.js?v6"></script>
     <script src="https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/js/portada.js?v6"></script>
 
     <!-- Densidad discursiva -->
-    <script src="./js/density.js?v8"></script>
+    <script src="https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/js/density.js?v8"></script>
 
     <!-- Inicializacion principal -->
-    <script src="./js/main.js?v9"></script>
+    <script src="https://nuevasnarrativasec.github.io/planes-de-gobierno-candidatos-lima-2026/js/main.js?v8"></script>
 
 </body>
 </html>
