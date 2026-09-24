@@ -362,7 +362,7 @@
             <div class="factchecking-header">
                 <h2>¿Se pueden cumplir estas promesas?</h2>
                 <p>
-                    Analizamos propuestas clave en los planes de gobierno para poner a prueba nuestra clasificación. Seleccionamos estos ejemplos específicos para mostrarte cómo diferenciamos una promesa que se puede cumplir de una que no tiene sustento.
+                    Analizamos propuestas clave en los planes de gobierno para poner a prueba nuestra clasificación. Seleccionamos estos ejemplos específicos para mostrarte cómo diferenciamos una promesa que se puede cumplir, que está condicionada o que no puede ejecutarse.
                 </p>
             </div>
 
@@ -618,18 +618,45 @@
         <div class="box-metodologia">
             <h6>Sobre nuestra metodologia</h6>
             <p>
-                Texto placeholder de metodologia. Describe aqui como se procesaron los planes de gobierno de los candidatos a Lima 2026.
+                Este especial analiza los planes de gobierno presentados ante el JNE utilizando automatización y modelos de inteligencia artificial para identificar los temas que prioriza cada organización política, analizar cómo formula sus propuestas y examinar si determinadas promesas pueden ejecutarse desde el nivel de gobierno al que postula el candidato.
+            </p>
+            <p>
+                El proceso, desarrollado con apoyo del fondo AI Catalyst de WAN-IFRA y OpenAI, combina procesamiento automatizado con revisión editorial. Ningún resultado se publica automáticamente: las clasificaciones y resultados son revisados por el equipo periodístico antes de su publicación. 
             </p>
             <p class="mas-metodologia" style="cursor: pointer; text-decoration: underline;">
                 Conoce el detalle del metodo de analisis aqui
             </p>
 
             <div id="detalle-oculto" style="display: none; margin-top: 20px;">
-                <h6>1. Como procesamos la data:</h6>
-                <p>Texto placeholder. Explica el proceso de estandarizacion, segmentacion, clasificacion con IA y validacion humana.</p>
+                <h6>1. Cómo procesamos los planes Estandarización</h6>
+                <p>
+                    Descargamos los planes de gobierno del JNE y utilizamos flujos de automatización para limpiar y uniformizar sus distintos formatos. Segmentación y clasificación: Dividimos los documentos en unidades de análisis y utilizamos modelos de lenguaje para identificar temas, propuestas y características del discurso. 
+                </p>
+                <p>
+                    Validación humana: El equipo editorial revisa los resultados, corrige posibles errores y valida las clasificaciones antes de publicarlas. 
+                </p>
 
-                <h6>2. Como medimos el discurso</h6>
-                <p>Texto placeholder. Explica los criterios de Enfoque y Formulacion de propuestas.</p>
+                <h6>2. Cómo analizamos el discurso</h6>
+                <p>
+                    Estas métricas no califican la calidad de una propuesta ni determinan si es buena o mala. Describen cómo está formulada y qué tipo de enfoque predomina en el documento. Formulación de propuestas: distingue entre planteamientos con indicadores o metas concretas, propuestas con lineamientos generales y declaraciones de intención. Enfoque discursivo: identifica si el planteamiento se apoya principalmente en gestión y datos (Tecnocrático), obras o acciones concretas (Operativo) o principios, normas y derechos (Normativo). 
+                </p>
+
+                <h6>2. Cómo analizamos las promesas </h6>
+                <p>
+                    Para evaluar promesas específicas desarrollamos una herramienta en dos etapas. 
+                </p>
+                <p>
+                    Primero, un modelo de lenguaje identifica las propuestas concretas contenidas en los planes.  Luego, un segundo modelo con capacidad de búsqueda contrasta cada una con normas, competencias y fuentes públicas oficiales. 
+                </p>
+                <p>
+                    El análisis considera qué puede hacer legalmente una municipalidad o un gobierno regional, si la propuesta requiere decisiones o recursos previos, si depende principalmente de otra entidad y si existen antecedentes o acciones públicas relacionadas. 
+                </p>
+                <p>
+                    Para ello se toman como referencia, entre otras fuentes, la Ley Orgánica de Municipalidades (Ley 27972) y la Ley Orgánica de Gobiernos Regionales (Ley 27867), según corresponda. 
+                </p>
+                <p>
+                    Las categorías y sus criterios fueron definidas y calibradas editorialmente a partir de casos reales. Cuando la clasificación automática no coincidía con los criterios establecidos, ajustamos las instrucciones y volvimos a probar el sistema. La inteligencia artificial apoya el análisis; la decisión final sobre la clasificación es revisada por periodistas.
+                </p>
             </div>
         </div>
 
@@ -668,10 +695,6 @@
                 <li>
                     <h4>Diseño:</h4>
                     <p>Marcelo Hidalgo</p>
-                </li>
-                <li>
-                    <h4>Ilustraciones:</h4>
-                    <p>Kiomy Kanashiro</p>
                 </li>
                 <li>
                     <h4>Producción general:</h4>

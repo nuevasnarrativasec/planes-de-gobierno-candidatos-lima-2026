@@ -217,6 +217,7 @@ span.filtrar {
     font-size: 12px;
     color: var(--color-text-light);
     padding: var(--spacing-md);
+    word-wrap: anywhere;
 }
 
 .factchecking-fuentes strong {
