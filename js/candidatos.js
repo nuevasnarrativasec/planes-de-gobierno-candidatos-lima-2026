@@ -193,10 +193,12 @@ function renderDetails(item) {
         ? `<a href="${item.planurl}" target="_blank" class="btn btn-primary" style="text-decoration: none;">Descarga el plan</a>`
         : `<button class="btn btn-primary" disabled style="opacity: 0.5; cursor: not-allowed;">Plan no disponible</button>`;
     
-    // Caso especial: Rafael López Aliaga postula como primer regidor
-    const esPrimerRegidor = (item.candidato || '')
+    // Casos especiales: candidatos que postulan como primer regidor
+    const CANDIDATOS_PRIMER_REGIDOR = ['lopez aliaga', 'romero castro'];
+    const nombreNormalizado = (item.candidato || '')
         .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-        .toLowerCase().includes('lopez aliaga');
+        .toLowerCase();
+    const esPrimerRegidor = CANDIDATOS_PRIMER_REGIDOR.some(nombre => nombreNormalizado.includes(nombre));
     const asteriscoHTML = esPrimerRegidor ? '<span class="candidate-asterisk">*</span>' : '';
     const notaRegidorHTML = esPrimerRegidor ? '<div class="candidate-note-regidor">Postula como primer regidor</div>' : '';
 
