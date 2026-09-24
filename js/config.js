@@ -18,7 +18,7 @@ const CONFIG = {
     // Hoja de factchecking (seccion "¿Se pueden cumplir estas promesas?")
     // >>> PENDIENTE: reemplazar con la hoja de factchecking de Lima 2026 <<<
     // Mientras esta vacia, la seccion mostrara una tarjeta de ejemplo (fallback automatico).
-    FACTCHECKING_SPREADSHEET_URL: ''
+    FACTCHECKING_SPREADSHEET_URL: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTw7QFONvksE62I03YJB6meKhndc8HwmUE4rUwVBvnBRHWSwB3On8G3BjhZukeWyN9BC3mSC6CR2jDK/pub?output=csv'
 };
 
 // Temas para densidad discursiva (seccion "Peso de los temas")
