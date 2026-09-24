@@ -381,7 +381,7 @@
                     <div class="conceptos-accordion-body">
                         <div class="concepto-section">
                             <p>
-                              Este análisis clasifica una muestra de propuestas bajo los siguientes criterios: <b>Factible</b>, si cuenta con viabilidad y mecanismos técnicos para su ejecución; <b>Engañosa</b>, si plantea metas o plazos que exceden las capacidades del Ejecutivo; <b>No está en sus manos</b>, si su cumplimiento depende de otros poderes u organismos; <b>Sin sustento</b>, si carece de información técnica suficiente para determinar su viabilidad; e <b>Inviable</b>, si contraviene el marco legal o excede el periodo de gestión.
+                              Este análisis clasifica una muestra de propuestas bajo los siguientes criterios: <b>Se puede ejecutar</b>, si la propuesta está dentro de las funciones de la MML y puede realizarse con el marco legal y los recursos disponibles; <b>Requiere condiciones previas</b>, si puede realizarse pero antes necesita una decisión o recurso adicional, como una modificación presupuestal, una ordenanza o un convenio; y <b>No puede ejecutarse</b>, si la propuesta enfrenta un impedimento legal o institucional que no permite realizarla en los términos ofrecidos.
                             </p>
                         </div>
                     </div>
@@ -412,12 +412,10 @@
 
             <div class="factchecking-dropdown-container" id="factcheckingVeredictoContainer" style="display: none;">
                 <select class="factchecking-dropdown" id="factcheckingVeredictoDropdown" onchange="handleVeredictoChange()">
-                    <option value="">Seleccionar resultado...</option>                    
-                    <option value="factible">Factible</option>
-                    <option value="enganosa">Engañosa</option>
-                    <option value="inviable">Inviable</option>
-                    <option value="sin_sustento">Sin sustento</option>
-                    <option value="no_en_sus_manos">No está en sus manos</option>
+                    <option value="">Seleccionar resultado...</option>
+                    <option value="se_puede_ejecutar">Se puede ejecutar</option>
+                    <option value="no_puede_ejecutarse">No puede ejecutarse</option>
+                    <option value="requiere_condiciones_previas">Requiere condiciones previas</option>
                 </select>
             </div>
 

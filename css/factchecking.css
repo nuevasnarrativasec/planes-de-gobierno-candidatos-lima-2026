@@ -190,54 +190,24 @@ span.filtrar {
 }
 
 /* Veredicto Colors */
-.factchecking-veredicto.factible .factchecking-veredicto-label {
+.factchecking-veredicto.se_puede_ejecutar .factchecking-veredicto-label {
     color: white;
     background: var(--color-viable);
 }
 
-.factchecking-veredicto.inviable .factchecking-veredicto-label {
+.factchecking-veredicto.no_puede_ejecutarse .factchecking-veredicto-label {
     color: white;
     background: var(--color-inviable);
 }
 
-.factchecking-veredicto.requiere_accion .factchecking-veredicto-label {
+.factchecking-veredicto.requiere_condiciones_previas .factchecking-veredicto-label {
     color: white;
     background: var(--color-requiere-accion);
-}
-
-.factchecking-veredicto.enganosa .factchecking-veredicto-label {
-    color: white;
-    background: var(--color-enganosa);
-}
-
-.factchecking-veredicto.inexacta .factchecking-veredicto-label {
-    color: white;
-    background: var(--color-inexacta);
 }
 
 .factchecking-veredicto.indeterminado .factchecking-veredicto-label {
     color: #383d41;
     background: var(--color-indeterminado);
-}
-
-.factchecking-veredicto.verdadera .factchecking-veredicto-label {
-    color: white;
-    background: var(--color-viable);
-}
-
-.factchecking-veredicto.falsa .factchecking-veredicto-label {
-    color: white;
-    background: var(--color-inviable);
-}
-
-.factchecking-veredicto.no_en_sus_manos .factchecking-veredicto-label {
-    color: #fff;
-    background: #5a6478;
-}
-
-.factchecking-veredicto.sin_sustento .factchecking-veredicto-label {
-    color: #fff;
-    background: #76664a;
 }
 
 /* ============================================

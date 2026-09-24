@@ -117,7 +117,7 @@ function loadExampleFactcheckingData() {
             partido: 'Ejemplo Partido',
             candidato: 'Candidato Ejemplo',
             frase: 'Propuesta de ejemplo para demostración.',
-            veredicto: 'Indeterminado',
+            veredicto: 'Requiere condiciones previas',
             justificacion: 'Esta es una justificación de ejemplo.',
             fuentes_consultadas: 'Fuente Ejemplo\nhttps://ejemplo.com'
         }
@@ -226,11 +226,9 @@ function createFactcheckingCard(item) {
 function normalizeVeredicto(veredicto) {
     if (!veredicto) return 'INDETERMINADO';
     const v = veredicto.toLowerCase().trim();
-    if (v === 'factible') return 'FACTIBLE';
-    if (v === 'inviable') return 'INVIABLE';
-    if (v.includes('sin') && v.includes('sin')) return 'SIN SUSTENTO';
-    if (v.includes('enga')) return 'ENGAÑOSA';
-    if (v.includes('no') || v === 'No') return 'no está en sus manos';
+    if (v.includes('no puede') || v.includes('no se puede')) return 'NO PUEDE EJECUTARSE';
+    if (v.includes('condiciones previas') || v.includes('requiere condiciones')) return 'REQUIERE CONDICIONES PREVIAS';
+    if (v.includes('se puede ejecutar')) return 'SE PUEDE EJECUTAR';
     return 'INDETERMINADO';
 }
 
@@ -240,11 +238,9 @@ function normalizeVeredicto(veredicto) {
 function getVeredictoClass(veredicto) {
     if (!veredicto) return 'indeterminado';
     const v = veredicto.toLowerCase().trim();
-    if (v === 'factible') return 'factible';
-    if (v === 'inviable') return 'inviable';
-    if (v.includes('sin') && v.includes('sin')) return 'sin_sustento';
-    if (v.includes('enga')) return 'enganosa';
-    if (v.includes('no') || v === 'No') return 'no_en_sus_manos';
+    if (v.includes('no puede') || v.includes('no se puede')) return 'no_puede_ejecutarse';
+    if (v.includes('condiciones previas') || v.includes('requiere condiciones')) return 'requiere_condiciones_previas';
+    if (v.includes('se puede ejecutar')) return 'se_puede_ejecutar';
     return 'indeterminado';
 }
 
@@ -253,12 +249,9 @@ function getVeredictoClass(veredicto) {
  */
 function getVeredictoDescripcion(veredictoClass) {
     const descripciones = {
-        'factible': 'Propuesta que puede ejecutarse de manera factible durante una gestión.',
-        'inviable': 'Propuesta que no puede ejecutarse dentro de una gestión o que contraviene la normativa vigente.',
-        'no_en_sus_manos': 'Propuesta cuyo desarrollo o cumplimiento no depende exclusivamente del Ejecutivo, sino que requiere la acción de otros poderes del Estado.',
-        'inexacta': 'Compromiso que no presenta información concreta ni criterios medibles para su desarrollo o evaluación.',
-        'enganosa': 'Propuesta que incluye metas o cifras concretas, pero que sobredimensiona las capacidades reales del Ejecutivo, usa plazos o alcances irrealistas o presenta resultados que no son exigibles ni creíbles dadas las restricciones técnicas, presupuestales o institucionales.',
-        'sin_sustento': 'No se cuenta con información suficiente para determinar la viabilidad de esta propuesta.'
+        'se_puede_ejecutar': 'La propuesta está dentro de las funciones de la MML y puede realizarse con el marco legal y los recursos disponibles.',
+        'no_puede_ejecutarse': 'La propuesta enfrenta un impedimento legal o institucional que no permite realizarla en los términos ofrecidos.',
+        'requiere_condiciones_previas': 'Puede realizarse, pero antes necesita una decisión o recurso adicional, como una modificación presupuestal, una ordenanza o un convenio.'
     };
     return descripciones[veredictoClass] || '';
 }
