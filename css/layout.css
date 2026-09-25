@@ -431,6 +431,7 @@ span.separador-logo {
 @media (max-width: 640px) {
     #header {
         background-size: cover;
+                overflow: hidden;
     }
     
     #header .logo-tu-decides {
