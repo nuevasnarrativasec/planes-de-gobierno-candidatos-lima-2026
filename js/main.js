@@ -155,10 +155,10 @@ function initMetodologia() {
         botonLeerMas.addEventListener('click', function() {
             if (contenidoOculto.style.display === 'none') {
                 contenidoOculto.style.display = 'block';
-                botonLeerMas.innerText = 'Ocultar detalle del metodo';
+                botonLeerMas.innerText = 'Ocultar detalle del método';
             } else {
                 contenidoOculto.style.display = 'none';
-                botonLeerMas.innerText = 'Conoce el detalle del metodo de analisis aqui';
+                botonLeerMas.innerText = 'Conoce el detalle del método de análisis aquí';
             }
         }, { passive: true });
     }
@@ -170,7 +170,7 @@ function initMetodologia() {
 
             if (contenidoOculto && contenidoOculto.style.display === 'none') {
                 contenidoOculto.style.display = 'block';
-                if (botonLeerMas) botonLeerMas.innerText = 'Ocultar detalle del metodo';
+                if (botonLeerMas) botonLeerMas.innerText = 'Ocultar detalle del método';
             }
 
             const boxMetodologia = document.querySelector('.box-metodologia');
